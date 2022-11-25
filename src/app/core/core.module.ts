@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { InformationComponent } from './components/information/information.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [InformationComponent],
   imports: [
     CommonModule
   ],
-  exports:[]
+  exports:[InformationComponent]
 })
 export class CoreModule { }
