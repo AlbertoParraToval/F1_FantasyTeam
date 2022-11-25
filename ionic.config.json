@@ -1,0 +1,7 @@
+{
+  "name": "F1_FantasyTeam",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
