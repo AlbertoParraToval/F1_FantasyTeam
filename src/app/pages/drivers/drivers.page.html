@@ -7,5 +7,9 @@
 </ion-header>
 
 <ion-content color="dark">
-<app-drivers-c></app-drivers-c>
+  <ion-text>
+    <h1>List of F1's Drivers</h1>
+  </ion-text>
+  
+<app-drivers-c *ngFor="let driver of getDriver()" [driverdata]="driver"></app-drivers-c>
 </ion-content>

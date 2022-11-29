@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup } from '@angular/forms';
+import { AlertController, ModalController } from '@ionic/angular';
+import { driversModel, DriversService } from 'src/app/core';
 
 @Component({
   selector: 'app-drivers',
@@ -7,7 +10,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DriversPage implements OnInit {
 
-  constructor() { }
+  driver: driversModel;
+  form:FormGroup;
+  constructor(
+
+    private driverSvc: DriversService,
+    private modal: ModalController,
+    private alert: AlertController
+  ) {}
+
+
+
+  getDriver(): driversModel[] {
+    return this.driverSvc.getDriver();
+  }
 
   ngOnInit() {
   }

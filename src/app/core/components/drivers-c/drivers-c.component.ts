@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { driversModel } from '../../models';
+import { DriversService } from '../../services';
 
 @Component({
   selector: 'app-drivers-c',
@@ -7,8 +9,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DriversCComponent implements OnInit {
 
-  constructor() { }
+
+  @Input() driverdata: driversModel;
+  @Output() onDelete = new EventEmitter;
+  @Output() onEdit = new EventEmitter;
+
+  constructor(
+    private driverSvc: DriversService
+  ) { }
 
   ngOnInit() {}
 
+
+    onEditClick() {
+      //console.log(this.userdata) me pilla el userdata
+      this.onEdit.emit(this.driverdata);
+    }
+
+
+    onDeleteClick() {
+      //console.log(this.userdata) me pilla el userdata
+      this.onDelete.emit(this.driverdata);
+      }
 }
