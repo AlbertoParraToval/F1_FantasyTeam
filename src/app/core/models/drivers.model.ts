@@ -4,4 +4,5 @@ export interface driversModel{
   nickname:String;
   dorsal:Number;
   palmares:String;
+  image:String;
 }
