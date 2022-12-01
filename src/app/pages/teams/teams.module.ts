@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { TeamsPageRoutingModule } from './teams-routing.module';
 
 import { TeamsPage } from './teams.page';
+import { CoreModule } from "../../core/core.module";
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    TeamsPageRoutingModule
-  ],
-  declarations: [TeamsPage]
+    declarations: [TeamsPage],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        TeamsPageRoutingModule,
+        CoreModule,
+    ]
 })
 export class TeamsPageModule {}

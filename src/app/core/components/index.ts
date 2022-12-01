@@ -1,3 +1,5 @@
 export * from "./drivers-c/drivers-c.component"
 export * from "./drivers-forms/drivers-forms.component"
 export * from "./information/information.component"
+export * from "./teams-c/teams-c.component"
+export * from "./teams-forms/teams-forms.component"

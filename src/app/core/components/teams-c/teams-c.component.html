@@ -1,0 +1,15 @@
+    <ion-card color="medium">
+    <img *ngIf="!teamdata.image" src="\assets\user.png" />
+      <img *ngIf="teamdata.image" alt="Person image" [src]="teamdata.image" />
+      <ion-card-header>
+        <ion-card-title>{{teamdata.name}}</ion-card-title>
+      </ion-card-header>
+
+
+        <ion-card-subtitle>Puntos esta temporada: {{teamdata.puntosTemporada}}.</ion-card-subtitle>
+        <ion-card-content>
+          {{teamdata.description}}
+        </ion-card-content>
+    <ion-button icon-only fill="clear" color="success" (click)="onEditClick()"><ion-icon style="zoom:1.5" name="create-outline" ></ion-icon></ion-button>
+    <ion-button icon-only fill="clear" color="danger" (click)="onDeleteClick()"><ion-icon style="zoom:1.5" name="trash-outline" ></ion-icon></ion-button>
+  </ion-card>

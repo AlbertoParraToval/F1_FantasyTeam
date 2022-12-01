@@ -5,17 +5,18 @@ import { IonicModule } from '@ionic/angular';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DriversCComponent } from './components/drivers-c/drivers-c.component';
 import { DriversFormsComponent } from './components/drivers-forms/drivers-forms.component';
+import { TeamsCComponent, TeamsFormsComponent } from './components';
 
 
 
 @NgModule({
-  declarations: [InformationComponent, DriversCComponent, DriversFormsComponent],
+  declarations: [InformationComponent, DriversCComponent, DriversFormsComponent, TeamsCComponent, TeamsFormsComponent],
   imports: [
     CommonModule,
     IonicModule,
     ReactiveFormsModule,
     FormsModule
   ],
-  exports:[InformationComponent, DriversCComponent, DriversFormsComponent]
+  exports:[InformationComponent, DriversCComponent, DriversFormsComponent, TeamsCComponent,TeamsFormsComponent]
 })
 export class CoreModule { }

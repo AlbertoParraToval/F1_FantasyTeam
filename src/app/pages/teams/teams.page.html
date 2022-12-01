@@ -1,9 +1,17 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>teams</ion-title>
+  <ion-toolbar color="dark">
+    <ion-back-button slot="start" defaultHref="/">Home</ion-back-button>
+    <ion-title>Teams</ion-title>
+    <ion-button color="medium" (click)="onNewTeam()" slot="end" style="margin:10px;width:50px;height:50px;--border-radius:50%;margin-right: 2%;" icon-only><ion-icon style="zoom:2" name="add-outline"></ion-icon></ion-button>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content color="dark">
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let teams of getTeams()"  size="12" size-lg="3" size-sm="6">
+          <app-teams-c  [teamdata]="teams" (onEdit)="onEditTeam($event)" (onDelete)="onDeleteTeam($event)"></app-teams-c>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

@@ -1,8 +1,8 @@
 export interface driversModel{
-  id:Number;
+  id:number;
   name:String;
   nickname:String;
-  dorsal:Number;
+  dorsal:number;
   palmares:String;
   image:String;
 }

@@ -1,6 +1,7 @@
 export interface teamsModel{
-  id: Number;
+  id: number;
   name: String;
-  palmares: String;
+  puntosTemporada: String;
   description: String;
+  image: String;
 }

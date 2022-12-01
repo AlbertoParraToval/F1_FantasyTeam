@@ -1,15 +1,12 @@
 <ion-header>
   <ion-toolbar color="dark">
-    <ion-title slot="end">Drivers</ion-title>
+    <ion-title >Drivers</ion-title>
     <!--BOTON RETURN DE MOMENTO HASTA PODER HACER EL MENU-->
     <ion-back-button slot="start" defaultHref="/">Return</ion-back-button>
+    <ion-button color="medium" (click)="onNewDriver()"slot="end" style="margin:10px;width:50px;height:50px;--border-radius:50%;margin-right: 2%;" icon-only><ion-icon style="zoom:2" name="add-outline"></ion-icon></ion-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content color="dark">
-  <ion-text>
-    <h1>List of F1's Drivers</h1>
-  </ion-text>
-  
-<app-drivers-c *ngFor="let driver of getDriver()" [driverdata]="driver"></app-drivers-c>
+<app-drivers-c *ngFor="let driver of getDriver()" [driverdata]="driver" (onEdit)="onEditDriver($event)" (onDelete)="onDeleteDriver($event)"></app-drivers-c>
 </ion-content>

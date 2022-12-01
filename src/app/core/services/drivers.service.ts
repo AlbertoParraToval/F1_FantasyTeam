@@ -195,14 +195,12 @@ export class DriversService {
   }
 
   addDriver(driverdata:driversModel){
-    //console.log(userdata)
     driverdata.id = this.id++
     this.drivers.push(driverdata);
   }
 
   updateDriver(driverUpdate:driversModel){
     var driverdata = this.drivers.find(p=>p.id==driverUpdate.id);
-    //console.log(userdata) me lo lee
     if(driverdata){
       driverdata.name = driverUpdate.name;
       driverdata.nickname = driverUpdate.nickname;

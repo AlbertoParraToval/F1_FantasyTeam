@@ -1,0 +1,34 @@
+
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-title>Datos de la Escuderia</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="onDismiss(null)">Cerrar</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <form [formGroup] = "form" (keyup.enter)="onSubmit()">
+    <ion-item>
+      <ion-label position="floating">
+        Nombre
+      </ion-label>
+      <ion-input type="text" placeholder="Nombre del Equipo" formControlName="name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">
+        Puntos Temporada Actual
+      </ion-label>
+      <ion-input type="text" placeholder="Modifica los Puntos del Equipo" formControlName="puntosTemporada"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">
+        Description
+      </ion-label>
+      <ion-input type="text" placeholder="Introduce una descripción del equipo" formControlName="description"></ion-input>
+    </ion-item>
+    <ion-button color="medium" (click)="onSubmit()"  [disabled]="!form.valid" type="submit">{{mode=="Edit"?"Modificar":"Añadir"}}</ion-button>
+  </form>
+</ion-content>
