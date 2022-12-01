@@ -10,7 +10,7 @@ export class TeamsService {
       id: 1,
       name: "Ferrari F1",
       puntosTemporada: "554 puntos.",
-      description: "La primera participación de Ferrari en Fórmula 1 fue en el Gran Premio de Mónaco de 1950, con el Tipo 125 F1. Ferrari es considerado uno de los cuatro grandes equipos de Fórmula 1, junto con Williams, McLaren y Mercedes.4​ Es el equipo activo más antiguo del campeonato, y es el que ha conseguido más victorias, campeonatos de pilotos (15) y campeonatos de constructores (16). Ha contado con muchos de los pilotos más destacados de la historia de la Fórmula 1 ",
+      description: "Ferrari es considerado uno de los cuatro grandes equipos de Fórmula 1, junto con Williams, McLaren y Mercedes.4​ Es el equipo activo más antiguo del campeonato, y es el que ha conseguido más victorias, campeonatos de pilotos (15) y campeonatos de constructores (16). Ha contado con muchos de los pilotos más destacados de la historia de la Fórmula 1.",
       image: "https://drive.google.com/uc?export=view&id=1Hxn2-eT99Shv1TgFWOKZzOhQ1ygeEU7R",
     },
     {
@@ -24,14 +24,14 @@ export class TeamsService {
       id: 3,
       name: "Mercedes AMG F1 Team",
       puntosTemporada: "515 puntos.",
-      description: "Mercedes-Benz es una de las automotrices más exitosas de la Fórmula 1, considerada uno de los cuatro equipos con mejores resultados, junto con Williams, Ferrari y McLaren.4​ Participó inicialmente como constructor en Fórmula 1 en 1954 y 1955, y volvió a hacerlo desde 2010 hasta la actualidad. El equipo alemán ganó ocho Campeonatos de Constructores de forma consecutiva (de 2014 a 2021). Es el tercer equipo en la historia con más victorias (124) y poles (135) en todos los ítems anteriores, solamente por detrás de Ferrari y McLaren.",
+      description: "Mercedes-Benz es una de las automotrices más exitosas de la Fórmula 1, considerada uno de los cuatro equipos con mejores resultados, junto con Williams, Ferrari y McLaren. Es el tercer equipo en la historia con más victorias (124) y poles (135) en todos los ítems anteriores, solamente por detrás de Ferrari y McLaren. Durante la era híbrida han ganado todo los campeonatos posibles.",
       image: "https://drive.google.com/uc?export=view&id=1vrcR5__OzrMQfvHD304yG4ip9Rbb1ThG",
     },
     {
       id: 4,
       name: "Mclaren F1 Team",
       puntosTemporada: "159 puntos.",
-      description: "Es considerado uno de los cuatro grandes equipos de Fórmula 1, junto con Williams, Ferrari y Mercedes. ​ A lo largo de los años ha obtenido 8 Campeonatos de Constructores (tercera en el historial), 12 Campeonatos de Pilotos (segunda), 183 victorias (segunda), 155 poles (segunda) y 489 podios (segunda).",
+      description: "Es considerado uno de los cuatro grandes equipos de Fórmula 1, junto con Williams, Ferrari y Mercedes. ​ A lo largo de los años ha obtenido 8 Campeonatos de Constructores (tercera en el historial), 12 Campeonatos de Pilotos (segunda), 183 victorias (segunda), 155 poles (segunda) y 489 podios (segunda). Han corrido para ellos leyendas como Ayrton Senna.",
       image: "https://drive.google.com/uc?export=view&id=1J4GMAHSpirQjtq1F1Jaiz1QrD73-HP4M",
     },
     {

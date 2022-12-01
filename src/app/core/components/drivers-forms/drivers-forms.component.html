@@ -26,6 +26,13 @@
       </ion-label>
       <ion-input type="number" placeholder="Introduce un número de dorsal" formControlName="dorsal"></ion-input>
     </ion-item>
-    <ion-button (click)="onSubmit()"  [disabled]="!form.valid" type="submit">{{mode=="Edit"?"Modificar":"Añadir"}}</ion-button>
+    <ion-item>
+      <ion-label position="floating">
+        Foto
+      </ion-label>
+      <ion-input type="routerLink" placeholder="Introduce la url de tu foto del drive" formControlName="image"></ion-input>
+    </ion-item>
+
+    <ion-button color="medium" (click)="onSubmit()"  [disabled]="!form.valid" type="submit">{{mode=="Edit"?"Modificar":"Añadir"}}</ion-button>
   </form>
 </ion-content>

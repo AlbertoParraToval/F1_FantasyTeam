@@ -19,6 +19,7 @@ export class DriversFormsComponent implements OnInit {
       this.form.controls['name'].setValue(driverdata.name);
       this.form.controls['nickname'].setValue(driverdata.nickname);
       this.form.controls['dorsal'].setValue(driverdata.dorsal);
+      this.form.controls['image'].setValue(driverdata.image);
       this.mode = "Edit";
     }
   }
@@ -34,6 +35,7 @@ export class DriversFormsComponent implements OnInit {
       name:['', [Validators.required]],
       nickname:['', [Validators.required]],
       dorsal:['', [Validators.required]],
+      image:['', []],
     });
   }
 
