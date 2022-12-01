@@ -1,5 +1,5 @@
 export interface driversManageModel{
-  id:Number;
-  driverId: Number;
-  teamId: Number;
+  id:number;
+  driverId: number;
+  teamId: number;
 }

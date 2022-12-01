@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { driversManageModel, driversModel, teamsModel } from '../../models';
+import { DriversManageService, DriversService, TeamsService } from '../../services';
 
 @Component({
   selector: 'app-drivers-management',
@@ -7,8 +9,38 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DriversManagementComponent implements OnInit {
 
-  constructor() { }
+  @Output() onEdit = new EventEmitter();
+  @Output() onDelete = new EventEmitter();
+  @Input() driversManageData : driversManageModel;
+  
+  constructor(
+    private driversSvc: DriversService,
+    private teamsSvc: TeamsService,
+    private driversManagementsSvc: DriversManageService
+  ) {}
 
   ngOnInit() {}
 
+  // METHODS
+  getTeams():teamsModel{
+    var teamId = this.driversManageData.teamId;
+    if(teamId)
+      return this.teamsSvc.getTeamById(teamId);
+      return undefined!;
+  }
+
+  getDriver():driversModel{
+    var driverId = this.driversManageData.driverId;
+    if(driverId)
+      return this.driversSvc.getDriverById(driverId);
+      return undefined!;
+  }
+
+  onEditClick(){
+    this.onEdit.emit(this.driversManageData);
+  }
+
+  onDeleteClick(){
+    this.onDelete.emit(this.driversManageData);
+  }
 }

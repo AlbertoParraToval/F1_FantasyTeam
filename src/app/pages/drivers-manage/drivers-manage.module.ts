@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { DriversManagePageRoutingModule } from './drivers-manage-routing.module';
 
 import { DriversManagePage } from './drivers-manage.page';
+import { CoreModule } from "../../core/core.module";
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    DriversManagePageRoutingModule
-  ],
-  declarations: [DriversManagePage]
+    declarations: [DriversManagePage],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        DriversManagePageRoutingModule,
+        CoreModule
+    ]
 })
 export class DriversManagePageModule {}
