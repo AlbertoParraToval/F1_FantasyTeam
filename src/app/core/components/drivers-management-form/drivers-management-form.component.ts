@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ModalController } from '@ionic/angular';
+import { Console } from 'console';
 import { driversManageModel } from '../../models';
 import { DriversService, TeamsService } from '../../services';
 
@@ -14,11 +15,13 @@ export class DriversManagementFormComponent implements OnInit {
   form:FormGroup;
   mode: "New" | "Edit" = "New";
 
-  @Input('driverManagementData') set driverManagement(driverManagementData:driversManageModel){
-    if(driverManagementData){
-      this.form.controls['id'].setValue(driverManagementData.id);
-      this.form.controls['driverId'].setValue(driverManagementData.driverId);
-      this.form.controls['taskId'].setValue(driverManagementData.teamId);
+  @Input('driversManageData') set driverManagement(driversManageData:driversManageModel){
+    
+    if(driversManageData){
+      this.form.controls['id'].setValue(driversManageData.id);
+      this.form.controls['driverId'].setValue(driversManageData.driverId);
+      this.form.controls['teamId'].setValue(driversManageData.teamId);
+      this.form.controls['duracionContrato'].setValue(driversManageData.duracionContrato);
       this.mode = "Edit";
     }
 
@@ -32,13 +35,14 @@ export class DriversManagementFormComponent implements OnInit {
       id:[null],
       teamId:[-1,Validators.min(0)],
       driverId:[-1,Validators.min(0)],
+      duracionContrato:[-1,Validators.min(0)]
     });
   }
 
   ngOnInit() {}
 
   onSubmit(){
-      this.modal.dismiss({assign: this.form.value, mode: this.mode}, 'ok')
+      this.modal.dismiss({driversManageData: this.form.value, mode: this.mode}, 'ok')
   }
 
   onDismiss(_result:any){

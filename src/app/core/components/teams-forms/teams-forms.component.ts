@@ -18,6 +18,7 @@ export class TeamsFormsComponent implements OnInit {
       this.form.controls['name'].setValue(teamdata.name);
       this.form.controls['description'].setValue(teamdata.description);
       this.form.controls['puntosTemporada'].setValue(teamdata.puntosTemporada);
+      this.form.controls['image'].setValue(teamdata.image);
       this.mode = 'Edit';
     }
   }
@@ -28,6 +29,7 @@ export class TeamsFormsComponent implements OnInit {
       name: ['', [Validators.required]],
       description: ['', [Validators.required]],
       puntosTemporada: ['', [Validators.required]],
+      image:["",[]]
     });
   }
 

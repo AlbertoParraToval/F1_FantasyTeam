@@ -25,9 +25,16 @@
 
     <ion-item>
       <ion-label position="floating">
-        Description
+        Descripción
       </ion-label>
       <ion-input type="text" placeholder="Introduce una descripción del equipo" formControlName="description"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">
+        Foto
+      </ion-label>
+      <ion-input type="text" placeholder="Introduce la foto de tu escuderia" formControlName="image"></ion-input>
     </ion-item>
     <ion-button color="medium" (click)="onSubmit()"  [disabled]="!form.valid" type="submit">{{mode=="Edit"?"Modificar":"Añadir"}}</ion-button>
   </form>

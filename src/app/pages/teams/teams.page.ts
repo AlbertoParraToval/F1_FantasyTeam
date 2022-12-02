@@ -56,7 +56,7 @@ export class TeamsPage implements OnInit {
   }
 
   onEditTeam(teamdata:teamsModel) {
-    //console.log(taskdata) 
+    console.log(teamdata) 
     this.presentTeamForm(teamdata);
   }
 

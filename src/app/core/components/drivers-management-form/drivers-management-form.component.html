@@ -9,8 +9,18 @@
 <ion-content class="ion-padding">
   
   <form [formGroup]="form" (ngSubmit)="onSubmit()" (keyup.enter)="onSubmit()">
-    <!--<app-user-selectable formControlName="userId"></app-user-selectable>
-    <app-task-selectable formControlName="taskId"></app-task-selectable>-->    
+    <!--<app-selectable-driver formControlName="driverId"></app-selectable-driver>-->
+    <app-selectable-team formControlName="selectedTeam"></app-selectable-team>    
+    
+    <ion-item>
+      <ion-label position="floating">Duracion del Contrato</ion-label>
+      <ion-select placeholder="Escoge una  opcion" formControlName="duracionContrato">
+        <ion-select-option value="1 Ano">1 año</ion-select-option>
+        <ion-select-option value="2 Anos">2 años</ion-select-option>
+        <ion-select-option value="3 Anos">3 años</ion-select-option>
+        <ion-select-option value="4 Anos">4 años</ion-select-option>
+      </ion-select>
+    </ion-item>
     <ion-button color="medium" [disabled]="!form.valid" type="submit">{{mode=="Edit"?"Modify":"Add"}}</ion-button>
   </form>
 </ion-content>

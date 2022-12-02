@@ -8,6 +8,9 @@ import { DriversPageRoutingModule } from './drivers-routing.module';
 
 import { DriversPage } from './drivers.page';
 import { CoreModule } from "../../core/core.module";
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+//import { createTranslateLoader } from 'src/app/core/utils/translator';
 
 @NgModule({
     declarations: [DriversPage],
@@ -16,7 +19,15 @@ import { CoreModule } from "../../core/core.module";
         FormsModule,
         IonicModule,
         DriversPageRoutingModule,
-        CoreModule
+        CoreModule,
+        HttpClientModule,
+     /*TranslateModule.forChild({
+      loader: {
+      provide: TranslateLoader,
+      useFactory: (createTranslateLoader),
+      deps: [HttpClient]
+      }
+      }),*/
     ]
 })
 export class DriversPageModule {}

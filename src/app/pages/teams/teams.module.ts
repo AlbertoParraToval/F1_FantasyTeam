@@ -8,6 +8,9 @@ import { TeamsPageRoutingModule } from './teams-routing.module';
 
 import { TeamsPage } from './teams.page';
 import { CoreModule } from "../../core/core.module";
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+//import { createTranslateLoader } from 'src/app/core/utils/translator';
 
 @NgModule({
     declarations: [TeamsPage],
@@ -17,6 +20,14 @@ import { CoreModule } from "../../core/core.module";
         IonicModule,
         TeamsPageRoutingModule,
         CoreModule,
+        HttpClientModule,
+    /*ranslateModule.forChild({
+      loader: {
+      provide: TranslateLoader,
+      useFactory: (createTranslateLoader),
+      deps: [HttpClient]
+      }
+      }),*/
     ]
 })
 export class TeamsPageModule {}

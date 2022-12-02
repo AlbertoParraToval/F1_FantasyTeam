@@ -8,6 +8,10 @@ import { AboutMePageRoutingModule } from './about-me-routing.module';
 
 import { AboutMePage } from './about-me.page';
 import { CoreModule } from "../../core/core.module";
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+//import { createTranslateLoader } from 'src/app/core/utils/translator';
+
 
 @NgModule({
     declarations: [AboutMePage],
@@ -16,7 +20,16 @@ import { CoreModule } from "../../core/core.module";
         FormsModule,
         IonicModule,
         AboutMePageRoutingModule,
-        CoreModule
+        CoreModule,
+        HttpClientModule,
+    
+       /* TranslateModule.forChild({
+        loader: {
+        provide: TranslateLoader,
+        useFactory: (createTranslateLoader),
+        deps: [HttpClient]
+        }
+        }),*/
     ]
 })
 export class AboutMePageModule {}
