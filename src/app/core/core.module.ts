@@ -11,7 +11,7 @@ import { DriversManagementFormComponent } from './components/drivers-management-
 import { LocaleService } from './services';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-//import { createTranslateLoader } from './utils/translator';
+import { createTranslateLoader } from './utils/translator';
 import en from '@angular/common/locales/en';
 import es from '@angular/common/locales/es';
 
@@ -44,13 +44,13 @@ export class LocaleId extends String {
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-    /*TranslateModule.forChild({
+    TranslateModule.forChild({
       loader: {
       provide: TranslateLoader,
       useFactory: (createTranslateLoader),
       deps: [HttpClient]
       }
-      }),*/
+      }),
       
     
     

@@ -10,7 +10,7 @@ import { DriversManagePage } from './drivers-manage.page';
 import { CoreModule } from "../../core/core.module";
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-//import { createTranslateLoader } from 'src/app/core/utils/translator';
+import { createTranslateLoader } from 'src/app/core/utils/translator';
 
 @NgModule({
     declarations: [DriversManagePage],
@@ -21,13 +21,13 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
         DriversManagePageRoutingModule,
         CoreModule,
         HttpClientModule,
-       /*TranslateModule.forChild({
+       TranslateModule.forChild({
       loader: {
       provide: TranslateLoader,
       useFactory: (createTranslateLoader),
       deps: [HttpClient]
       }
-      }),*/
+      }),
     ]
 })
 export class DriversManagePageModule {}

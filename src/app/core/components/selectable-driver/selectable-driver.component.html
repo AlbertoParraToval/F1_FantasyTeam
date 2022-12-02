@@ -1,3 +1,25 @@
-<p>
-  selectable-driver works!
-</p>
+<ion-accordion-group [multiple]="true" #accordion>
+  <ion-accordion value="first">
+    <ion-item slot="header" color="light">
+      <ng-container *ngIf="drivers!=null">
+        <ion-avatar class="person">
+          <img *ngIf="!drivers?.image" alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+          <img *ngIf="drivers?.image" alt="Person picture" [src]="drivers.image" />
+        </ion-avatar>
+        <ion-label>{{drivers.name}}, {{drivers.nickname}}</ion-label>
+      </ng-container>
+      <ion-label *ngIf="!drivers">Selecciona un Piloto</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">
+      <ion-list>
+        <ion-item *ngFor="let drivers of getDrivers()" button detail  (click)="onDriverClicked(drivers, accordion)">
+          <ion-avatar class="person">
+            <img *ngIf="!drivers.image" alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+            <img *ngIf="drivers.image" alt="Person picture" [src]="drivers.image" />
+          </ion-avatar>
+          <ion-label>{{drivers.nickname}}, {{drivers.name}}</ion-label>
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-accordion>
+</ion-accordion-group>

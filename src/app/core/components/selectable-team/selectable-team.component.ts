@@ -16,19 +16,19 @@ export const USER_PROFILE_VALUE_ACCESSOR: any = {
   selector: 'app-selectable-team',
   templateUrl: './selectable-team.component.html',
   styleUrls: ['./selectable-team.component.scss'],
+  providers:[USER_PROFILE_VALUE_ACCESSOR]
 })
 export class SelectableTeamComponent implements OnInit,ControlValueAccessor {
-  selectedTeam:teamsModel;
+  teams:teamsModel;
+
   propagateChange = (_: any) => { }
   isDisabled:boolean = false;
 
   constructor( private teamsSvc:TeamsService) { }
 
 
-
   writeValue(obj: any): void {
-    console.log(this.teamsSvc.getTeamById(obj).image);
-    this.selectedTeam = this.teamsSvc.getTeamById(obj);
+    this.teams = (this.teamsSvc.getTeamById(obj));
   }
 
   registerOnChange(fn: any): void {
@@ -48,11 +48,10 @@ export class SelectableTeamComponent implements OnInit,ControlValueAccessor {
     return this.teamsSvc.getTeam();
   } 
 
-  onTeamClicked(selectedTeam:teamsModel, accordion:IonAccordionGroup){
-    console.log(selectedTeam);
-    this.selectedTeam = selectedTeam;
+  onTeamClicked(teams:teamsModel, accordion:IonAccordionGroup){
+    this.teams = teams;
     accordion.value='';
-    this.propagateChange(this.selectedTeam.id);
+    this.propagateChange(this.teams.id);
   }
 
 }

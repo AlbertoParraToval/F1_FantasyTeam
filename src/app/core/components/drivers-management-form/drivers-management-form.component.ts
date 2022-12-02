@@ -1,7 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ModalController } from '@ionic/angular';
-import { Console } from 'console';
 import { driversManageModel } from '../../models';
 import { DriversService, TeamsService } from '../../services';
 
@@ -14,9 +13,7 @@ export class DriversManagementFormComponent implements OnInit {
 
   form:FormGroup;
   mode: "New" | "Edit" = "New";
-
-  @Input('driversManageData') set driverManagement(driversManageData:driversManageModel){
-    
+  @Input('driversManageData') set driverManagement(driversManageData:driversManageModel){    
     if(driversManageData){
       this.form.controls['id'].setValue(driversManageData.id);
       this.form.controls['driverId'].setValue(driversManageData.driverId);
@@ -33,9 +30,9 @@ export class DriversManagementFormComponent implements OnInit {
     ) {
     this.form = this.formBuilder.group({ 
       id:[null],
-      teamId:[-1,Validators.min(0)],
-      driverId:[-1,Validators.min(0)],
-      duracionContrato:[-1,Validators.min(0)]
+      teamId:[0,Validators.min(1)],
+      driverId:[0,Validators.min(1)],
+      duracionContrato:[0,Validators.min(1)],
     });
   }
 

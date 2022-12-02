@@ -7,7 +7,7 @@ import { HomePage } from './home.page';
 import { HomePageRoutingModule } from './home-routing.module';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-//import { createTranslateLoader } from 'src/app/core/utils/translator';
+import { createTranslateLoader } from 'src/app/core/utils/translator';
 
 
 @NgModule({
@@ -17,13 +17,13 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
     IonicModule,
     HomePageRoutingModule,
     HttpClientModule,
-        /*TranslateModule.forChild({
+        TranslateModule.forChild({
       loader: {
       provide: TranslateLoader,
       useFactory: (createTranslateLoader),
       deps: [HttpClient]
       }
-      }),*/
+      }),
     
   ],
   declarations: [HomePage]
