@@ -17,7 +17,7 @@ export class TeamsService {
       id: 2,
       name: "Red Bull Honda Racing F1",
       puntosTemporada: "759 puntos.",
-      description: "Red Bull Racing es un equipo privado de origen austríaco con sede en Milton Keynes, en Gran Bretaña. Es propiedad de la marca de bebidas homónima. El origen de Red Bull en el automovilismo se remonta al año 1987, cuando fue patrocinadora personal del piloto Gerhard Berger. Entre 1995 y 2004, patrocinó al equipo Sauber. ",
+      description: "Red Bull Racing es un equipo privado de origen austríaco con sede en Milton Keynes, en Gran Bretaña. Es propiedad de la marca de bebidas homónima. El origen de Red Bull en el automovilismo se remonta al año 1987, cuando fue patrocinadora personal del piloto Gerhard Berger. Entre 1995 y 2004, patrocinó al equipo Sauber. Son los ultimos dos ganadores de constructores. ",
       image: "https://drive.google.com/uc?export=view&id=16xfpNrNv32IkwqrJqQyYdgPEAoF6fhOO",
     },
     {

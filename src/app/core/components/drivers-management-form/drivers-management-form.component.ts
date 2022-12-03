@@ -30,9 +30,9 @@ export class DriversManagementFormComponent implements OnInit {
     ) {
     this.form = this.formBuilder.group({ 
       id:[null],
-      teamId:[0,Validators.min(1)],
-      driverId:[0,Validators.min(1)],
-      duracionContrato:[0,Validators.min(1)],
+      teamId:[-1,Validators.min(1)],
+      driverId:[-1,Validators.min(1)],
+      duracionContrato:[-1,Validators.min(1)],
     });
   }
 

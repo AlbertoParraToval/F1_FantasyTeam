@@ -8,7 +8,7 @@ export class DriversService {
 
   public drivers: driversModel[] = [
     {
-      id:1,
+      id:0,
       name:"Max Verstappen",
       nickname:"Super Max",
       dorsal: 1,
@@ -16,7 +16,7 @@ export class DriversService {
       image: "https://drive.google.com/uc?export=view&id=1IqRoRaocEKsxseJlusj8oQmxQmqOUzin"
     },
     {
-      id:2,
+      id:1,
       name:"Charles Leclerc",
       nickname:"Il Predestinato",
       dorsal: 16,
@@ -24,7 +24,7 @@ export class DriversService {
       image: "https://drive.google.com/uc?export=view&id=1NxxdwYqWm2c78UETD4O8TRoWrZZyEAZC"
     },
     {
-      id:3,
+      id:2,
       name:"Sergio Perez",
       nickname:"Checo",
       dorsal: 11,
@@ -32,7 +32,7 @@ export class DriversService {
       image: "https://drive.google.com/uc?export=view&id=1eoSib9mgjM-XtP9P3F2JX1178NaLroXQ"
     },
     {
-      id:4,
+      id:3,
       name:"George Russell",
       nickname:"Georgy",
       dorsal: 6,
@@ -40,7 +40,7 @@ export class DriversService {
       image: "https://drive.google.com/uc?export=view&id=10Bs117r_RWUySvXj1GrbdKe5cKVH7eCr"
     },
     {
-      id:5,
+      id:4,
       name:"Carlos Sainz",
       nickname:"Smooth Operator",
       dorsal: 55,
@@ -48,7 +48,7 @@ export class DriversService {
       image: "https://drive.google.com/uc?export=view&id=1skDDQBIzQxvJ3YHzGqyvxUk9RMGtfr6E"
     },
     {
-      id:6,
+      id:5,
       name:"Lewis Hamilton",
       nickname:"Hamilton",
       dorsal: 44,
@@ -56,7 +56,7 @@ export class DriversService {
       image: "https://drive.google.com/uc?export=view&id=1xMGKU-Ma6UZkGN-0zZJ9XRYrKZNPBw8l"
     },
     {
-      id:7,
+      id:6,
       name:"Lando Norris",
       nickname:"Norrizsio",
       dorsal: 4,
@@ -64,7 +64,7 @@ export class DriversService {
       image: "https://drive.google.com/uc?export=view&id=1O4gFayzKMhUtTh2feCDY2vhU6Z-xyrQd"
     },
     {
-      id:8,
+      id:7,
       name:"Esteban Ocon",
       nickname:"Mojon",
       dorsal: 31,
@@ -72,7 +72,7 @@ export class DriversService {
       image: "https://drive.google.com/uc?export=view&id=1Yu1J6Os7f-XN0fzBKdhR2jvXWc7RS5Ho"
     },
     {
-      id:9,
+      id:8,
       name:"Fernando Alonso",
       nickname:"Nano",
       dorsal: 14,
@@ -80,7 +80,7 @@ export class DriversService {
       image: "https://drive.google.com/uc?export=view&id=1i68D7SC_SbTta-ILwQmQDDVvE95wgFF7"
     },
     {
-      id:10,
+      id:9,
       name:"Yuki Tsunoda",
       nickname:"Peligro Japonés",
       dorsal: 22,
@@ -88,7 +88,7 @@ export class DriversService {
       image: "https://drive.google.com/uc?export=view&id=1wtV3NmdFsVDjbJ42NSfdI9nuZvuUXCbt"
     },
     {
-      id:11,
+      id:10,
       name:"Pierre Gasly",
       nickname:"Gabacho",
       dorsal: 10,
@@ -96,7 +96,7 @@ export class DriversService {
       image: "https://drive.google.com/uc?export=view&id=1RHp3mg2jD1YNKGgyO2RYdzLMcyU5hrGx"
     },
     {
-      id:12,
+      id:11,
       name:"Daniel Ricciardo",
       nickname:"Ricky",
       dorsal: 3,
@@ -104,7 +104,7 @@ export class DriversService {
       image: "https://drive.google.com/uc?export=view&id=1vazUWwbbeeJcApGfGpX2nkHC-Cv28v5y"
     },
     {
-      id:13,
+      id:12,
       name:"Kevin Magnussen",
       nickname:"K-Mag",
       dorsal: 20,
@@ -112,7 +112,7 @@ export class DriversService {
       image: "https://drive.google.com/uc?export=view&id=1lx14XVqUoDxcU6lWJ2IQWD49G-6JALc-"
     },
     {
-      id:14,
+      id:13,
       name:"Mick Schumacher",
       nickname:"Mini Schumi",
       dorsal: 47,
@@ -121,7 +121,7 @@ export class DriversService {
     }
     ,
     {
-      id:15,
+      id:14,
       name:"Sebastian Vettel",
       nickname:"Seb",
       dorsal: 5,
@@ -130,7 +130,7 @@ export class DriversService {
     }
     ,
     {
-      id:16,
+      id:15,
       name:"Valtery Bottas",
       nickname:"Bottery",
       dorsal: 77,
@@ -139,7 +139,7 @@ export class DriversService {
     }
     ,
     {
-      id:17,
+      id:16,
       name:"Guan yu Zhou",
       nickname:"El chino de calidad",
       dorsal: 34,
@@ -148,7 +148,7 @@ export class DriversService {
     }
     ,
     {
-      id:18,
+      id:17,
       name:"Alexander Albon",
       nickname:"Albonio",
       dorsal: 9,
@@ -157,7 +157,7 @@ export class DriversService {
     }
     ,
     {
-      id:19,
+      id:18,
       name:"Lance Stroll",
       nickname:"Senna Canadiense",
       dorsal: 13,
@@ -166,7 +166,7 @@ export class DriversService {
     }
     ,
     {
-      id:20,
+      id:19,
       name:"Nicolas Latifi",
       nickname:"Goatifi",
       dorsal: 23,

@@ -7,55 +7,21 @@ import { driversManageModel, teamsModel } from '../models';
 export class DriversManageService {
     public driversManagement : driversManageModel[] = [
     {
+      id:0,
+      driverId:0,
+      teamId:0,
+      duracionContrato:"3 Años"
+    },
+    {
       id:1,
       driverId:1,
       teamId:1,
-      duracionContrato:"3 Años"
+      duracionContrato:"1 Año"
     },
     {
       id:2,
       driverId:2,
       teamId:2,
-      duracionContrato:"1 Año"
-    },
-    {
-      id:3,
-      driverId:3,
-      teamId:3,
-      duracionContrato:"2 Años"
-    },
-    {
-      id:4,
-      driverId:4,
-      teamId:4,
-      duracionContrato:"1 Año"
-    }
-    ,
-    {
-      id:5,
-      driverId:5,
-      teamId:5,
-      duracionContrato:"1 Año"
-    }
-    ,
-    {
-      id:6,
-      driverId:6,
-      teamId:6,
-      duracionContrato:"2 Años"
-    }
-    ,
-    {
-      id:7,
-      driverId:7,
-      teamId:7,
-      duracionContrato:"1 Año"
-    }
-    ,
-    {
-      id:8,
-      driverId:8,
-      teamId:8,
       duracionContrato:"2 Años"
     }
     ]
