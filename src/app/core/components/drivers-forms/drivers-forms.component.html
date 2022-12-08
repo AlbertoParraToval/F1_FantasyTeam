@@ -10,25 +10,25 @@
   <form [formGroup] = "form" (keyup.enter)="onSubmit()">
     <ion-item>
       <ion-label position="floating">
-        {{'Nombre' | uppercase}}
+        {{'Nombre' | uppercase |translate}}
       </ion-label>
       <ion-input type="text" placeholder="Introduce tu nombre completo" formControlName="name"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">
-        {{'Apodo' | uppercase}}
+        {{'Apodo' | uppercase|translate}}
       </ion-label>
       <ion-input type="text" placeholder="Introduce el apodo del piloto" formControlName="nickname"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">
-        {{'Dorsal' | uppercase}}
+        {{'Dorsal' | uppercase|translate}}
       </ion-label>
       <ion-input type="number" placeholder="Introduce un número de dorsal" formControlName="dorsal"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">
-        {{ 'Foto' | uppercase }}
+        {{ 'Foto' | uppercase|translate }}
       </ion-label>
       <ion-input type="routerLink" placeholder="Introduce la url de tu foto del drive" formControlName="image"></ion-input>
     </ion-item>

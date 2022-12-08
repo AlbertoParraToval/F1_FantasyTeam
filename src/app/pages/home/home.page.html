@@ -1,7 +1,7 @@
 <ion-content [fullscreen]="true" color="dark">
   <ion-header >
     <ion-toolbar color="dark">
-      <ion-title size="large">F1 Fantasy</ion-title>
+      <ion-title size="large">{{'home.title'| translate}}</ion-title>
       <ion-button class="button_Tool" slot="end" color="danger" routerLink="/about-me">  <ion-icon name="information"></ion-icon></ion-button>
     </ion-toolbar>
   </ion-header>
@@ -13,38 +13,38 @@
         <ion-col sizeXl="4" sizeMd="6" sizeSm="12">
           <ion-card color="dark">
             <ion-card-header>
-              <ion-card-title>Drivers</ion-card-title>
+              <ion-card-title>{{'home.page1'| translate}}</ion-card-title>
             </ion-card-header>
 
             <ion-card-content>
               <img src="./../../../assets/images/fotos/img2.jpg"  alt="drivers F1" />
             </ion-card-content>
-            <ion-button class="button_Tool" color="danger" routerLink="/drivers">View</ion-button>
+            <ion-button class="button_Tool" color="danger" routerLink="/drivers">{{'home.buttonView'| translate}}</ion-button>
           </ion-card>
         </ion-col>
           <!--2º Card-->
         <ion-col sizeXl="4" sizeMd="6" sizeSm="12">
           <ion-card color="dark">
             <ion-card-header>
-              <ion-card-title>Management</ion-card-title>
+              <ion-card-title>{{'home.page2'| translate}}</ion-card-title>
             </ion-card-header>
 
             <ion-card-content>
               <img src="./../../../assets/images/fotos/img1.jpg" alt="christian horner" />
             </ion-card-content>
-            <ion-button class="button_Tool" color="danger" routerLink="/drivers-manage"> View </ion-button>
+            <ion-button class="button_Tool" color="danger" routerLink="/drivers-manage"> {{'home.buttonView'| translate}} </ion-button>
           </ion-card>
         </ion-col>
         <!--3º Card-->
         <ion-col sizeXl="4" sizeMd="6" sizeSm="12">
           <ion-card color="dark">
             <ion-card-header>
-              <ion-card-title>Teams</ion-card-title>
+              <ion-card-title>{{'home.page3'| translate}}</ion-card-title>
             </ion-card-header>
             <ion-card-content>
               <img src="./../../../assets/images/fotos/img3.jpg" alt="f1 fotos" />
             </ion-card-content>
-            <ion-button class="button_Tool" color="danger" routerLink="/teams"> View </ion-button>
+            <ion-button class="button_Tool" color="danger" routerLink="/teams"> {{'home.buttonView'| translate}}</ion-button>
           </ion-card>
         </ion-col>
       </ion-row>

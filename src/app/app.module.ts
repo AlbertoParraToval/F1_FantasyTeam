@@ -15,6 +15,7 @@ import { createTranslateLoader } from './core/utils/translator';
 
 @NgModule({
   declarations: [AppComponent],
+  entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, CoreModule,HttpClientModule,
     TranslateModule.forRoot({
       loader: {
@@ -23,11 +24,12 @@ import { createTranslateLoader } from './core/utils/translator';
       deps: [HttpClient]
       }
       })],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy, },{
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy,  },{
     provide: LOCALE_ID,
     useClass: LocaleId,
-    deps: [LocaleService],
+    deps: [LocaleService], 
   },],
+  
   bootstrap: [AppComponent],
 })
 export class AppModule {}

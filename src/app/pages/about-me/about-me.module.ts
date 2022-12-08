@@ -10,8 +10,8 @@ import { AboutMePage } from './about-me.page';
 import { CoreModule } from "../../core/core.module";
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { createTranslateLoader } from 'src/app/core/utils/translator';
-
 
 @NgModule({
     declarations: [AboutMePage],
@@ -23,7 +23,7 @@ import { createTranslateLoader } from 'src/app/core/utils/translator';
         CoreModule,
         HttpClientModule,
     
-       TranslateModule.forChild({
+        TranslateModule.forChild({
         loader: {
         provide: TranslateLoader,
         useFactory: (createTranslateLoader),
