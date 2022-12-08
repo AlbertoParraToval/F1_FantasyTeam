@@ -1,9 +1,9 @@
 
 <ion-header>
   <ion-toolbar color="medium">
-    <ion-title>Datos de la Escuderia</ion-title>
+    <ion-title>{{'TeamsComponentF.title' |translate}}</ion-title>
     <ion-buttons slot="end">
-      <ion-button (click)="onDismiss(null)">Cerrar</ion-button>
+      <ion-button (click)="onDismiss(null)">{{'TeamsComponentF.btn_Cerrar' | translate}}</ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -11,31 +11,31 @@
   <form [formGroup] = "form" (keyup.enter)="onSubmit()">
     <ion-item>
       <ion-label position="floating">
-        Nombre
+        {{'TeamsComponentF.nombre' |translate}}
       </ion-label>
       <ion-input type="text" placeholder="Nombre del Equipo" formControlName="name"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label position="floating">
-        Puntos Temporada Actual
+        {{'TeamsComponentF.pts'|translate}}
       </ion-label>
       <ion-input type="text" placeholder="Modifica los Puntos del Equipo" formControlName="puntosTemporada"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label position="floating">
-        Descripción
+        {{'TeamsComponentF.description'|translate}}
       </ion-label>
       <ion-input type="text" placeholder="Introduce una descripción del equipo" formControlName="description"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label position="floating">
-        Foto
+        {{'TeamsComponentF.foto'|translate}}
       </ion-label>
       <ion-input type="text" placeholder="Introduce la foto de tu escuderia" formControlName="image"></ion-input>
     </ion-item>
-    <ion-button color="medium" (click)="onSubmit()"  [disabled]="!form.valid" type="submit">{{mode=="Edit"?"Modificar":"Añadir"}}</ion-button>
+    <ion-button color="medium" (click)="onSubmit()"  [disabled]="!form.valid" type="submit">{{mode=="Edit"?"Modificar":"Añadir" | translate}}</ion-button>
   </form>
 </ion-content>

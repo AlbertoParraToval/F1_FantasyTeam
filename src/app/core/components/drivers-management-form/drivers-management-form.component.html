@@ -13,12 +13,12 @@
     <app-selectable-team formControlName="teamId"></app-selectable-team>
     
     <ion-item>
-      <ion-label position="floating">Duracion del Contrato</ion-label>
+      <ion-label position="floating">{{ 'ManageForm.contrato' | translate }}</ion-label>
       <ion-select placeholder="Escoge una  opcion" formControlName="duracionContrato">
-        <ion-select-option value="1 Ano">{{ '1 año' | uppercase }}</ion-select-option>
-        <ion-select-option value="2 Anos">{{ '2 años' | uppercase }}</ion-select-option>
-        <ion-select-option value="3 Anos">{{ '3 años' | uppercase }}</ion-select-option>
-        <ion-select-option value="4 Anos">{{ '4 años' | uppercase }}</ion-select-option>
+        <ion-select-option value="1 Ano">{{ 'ManageForm.opcion1' | translate }}</ion-select-option>
+        <ion-select-option value="2 Anos">{{ 'ManageForm.opcion2' |translate }}</ion-select-option>
+        <ion-select-option value="3 Anos">{{ 'ManageForm.opcion3' | translate}}</ion-select-option>
+        <ion-select-option value="4 Anos">{{ 'ManageForm.opcion4' | translate }}</ion-select-option>
       </ion-select>
     </ion-item>
     <ion-button color="medium" [disabled]="!form.valid" type="submit">{{mode=="Edit"?"Modify":"Add"}}</ion-button>

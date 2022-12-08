@@ -16,7 +16,7 @@
         </ion-avatar>
         <ion-label>{{teams.name}}</ion-label>
       </ng-container>
-      <ion-label *ngIf="!teams">Selecciona un equipo</ion-label>
+      <ion-label *ngIf="!teams">{{'selectables.team' | translate}}</ion-label>
     </ion-item>
 
     <div class="ion-padding" slot="content">
