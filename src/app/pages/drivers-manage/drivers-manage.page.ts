@@ -52,7 +52,7 @@ export class DriversManagePage implements OnInit {
 
   async onDeleteAlert(driversManageData: driversManageModel){
     const alert = await this.alert.create({
-      header: '¿Está seguro de que desear borrar la asignación de tarea?',
+      header: '¿Está seguro de que desear borrar el fichaje?',
       buttons: [
         {
           text: 'Cancelar',
@@ -76,7 +76,7 @@ export class DriversManagePage implements OnInit {
     const { role } = await alert.onDidDismiss();
   }
 
-  onNewDriverManagement(){
+  onNewDriverManagement(driversManageData: driversManageModel){
     this.presentManagementForm(null!);  
   }
 

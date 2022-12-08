@@ -7,21 +7,21 @@ import { driversManageModel, teamsModel } from '../models';
 export class DriversManageService {
     public driversManagement : driversManageModel[] = [
     {
-      id:0,
-      driverId:0,
-      teamId:0,
-      duracionContrato:"3 Años"
-    },
-    {
       id:1,
       driverId:1,
       teamId:1,
-      duracionContrato:"1 Año"
+      duracionContrato:"3 Años"
     },
     {
       id:2,
       driverId:2,
       teamId:2,
+      duracionContrato:"1 Año"
+    },
+    {
+      id:3,
+      driverId:3,
+      teamId:3,
       duracionContrato:"2 Años"
     }
     ]
