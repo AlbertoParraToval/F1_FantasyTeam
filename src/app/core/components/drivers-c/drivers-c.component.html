@@ -6,19 +6,19 @@
         <img *ngIf="driverdata.image" alt="Person picture" [src]="driverdata.image" />
           <img  *ngIf="!driverdata.image"  alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
         </ion-avatar>
-        <ion-label >{{driverdata.name}} </ion-label>
+        <ion-label>{{'driversT.nombre'|translate}} {{driverdata.name}} </ion-label>
       </ion-item>
 
 
       <div class="ion-padding" slot="content">
       <ion-text class="textoC" color="dark">
-        Apodo: "{{driverdata.nickname }}".
+        {{'driversT.apodo'|translate}}  "{{driverdata.nickname }}".
       </ion-text> 
       </div>
 
       <div class="ion-padding" slot="content" >
         <ion-text class="textoC" color="dark">
-          Dorsal: {{driverdata.dorsal}}.
+          {{'driversT.dorsal'|translate}} {{driverdata.dorsal}}.
         </ion-text>
       </div>
     </ion-accordion>

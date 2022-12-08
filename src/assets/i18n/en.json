@@ -8,9 +8,12 @@
   },
   
 
-  "teams": {
-    "title": "Teams"
+  "PageTitulos": {
+    "team": "Teams",
+    "driver":"Drives",
+    "dManage":"Management"
 },
+
 
 "TeamsComponentF":{
   "title":"Team Information",
@@ -22,6 +25,12 @@
   
 },
 
+
+"driversT":{
+  "nombre":"Name: ",
+  "apodo":"Nickname: ",
+  "dorsal":"Number: "
+},
 
 
 "ManageForm":{

@@ -9,8 +9,17 @@
 
 
 
-  "teams": {
-    "title": "Teams"
+  "PageTitulos": {
+    "team": "Equipos",
+    "driver":"Pilotos",
+    "dManage":"Fichajes"
+},
+
+
+"driversT":{
+  "nombre":"Nombre: ",
+  "apodo":"Apodo: ",
+  "dorsal":"Dorsal: "
 },
 
 
