@@ -14,6 +14,7 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { createTranslateLoader } from './utils/translator';
 import en from '@angular/common/locales/en';
 import es from '@angular/common/locales/es';
+import { ReproductorMusicComponent } from './components/reproductor-music/reproductor-music.component';
 
 //Traducción En proceso (Hacer en el Finde)
 
@@ -37,7 +38,7 @@ export class LocaleId extends String {
 
 
 @NgModule({
-  declarations: [InformationComponent, DriversCComponent, DriversFormsComponent, TeamsCComponent, TeamsFormsComponent, DriversManagementComponent, DriversManagementFormComponent, SelectableDriverComponent,SelectableTeamComponent,],
+  declarations: [InformationComponent, DriversCComponent, DriversFormsComponent, TeamsCComponent, TeamsFormsComponent, DriversManagementComponent, DriversManagementFormComponent, SelectableDriverComponent,SelectableTeamComponent,ReproductorMusicComponent],
   imports: [
     CommonModule,
     IonicModule,
@@ -55,7 +56,7 @@ export class LocaleId extends String {
     
     
   ],
-  exports:[InformationComponent, DriversCComponent, DriversFormsComponent, TeamsCComponent,TeamsFormsComponent,DriversManagementComponent, DriversManagementFormComponent,SelectableDriverComponent,SelectableTeamComponent,],
+  exports:[InformationComponent, DriversCComponent, DriversFormsComponent, TeamsCComponent,TeamsFormsComponent,DriversManagementComponent, DriversManagementFormComponent,SelectableDriverComponent,SelectableTeamComponent,ReproductorMusicComponent],
   
   providers:[{
     provide: LOCALE_ID,

@@ -1,0 +1,8 @@
+<ion-card [ngStyle]="{'background-color':'dark' }">
+  <ion-button (click)="play()" *ngIf="!reproduciendo"  color="dark"  [ngStyle]="{'background-color':'light' }">
+    <ion-icon name="play"></ion-icon>
+  </ion-button>
+  <ion-button (click)="pause()" *ngIf="reproduciendo"   color="dark" [ngStyle]="{'color':'light' }">
+    <ion-icon name="pause"></ion-icon>
+  </ion-button>
+</ion-card>
