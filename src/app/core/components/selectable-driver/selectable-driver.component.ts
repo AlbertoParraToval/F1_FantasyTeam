@@ -50,7 +50,7 @@ export class SelectableDriverComponent implements OnInit {
   onDriverClicked(drivers:driversModel, accordion:IonAccordionGroup){
     this.drivers = drivers;
     accordion.value='';
-    this.propagateChange(this.drivers.id);
+    this.propagateChange(this.drivers.id - 1);
   }
 
 }

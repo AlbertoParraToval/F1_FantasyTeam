@@ -1,23 +1,25 @@
 <ion-item color="dark">
-  <ion-avatar class="task">
-    <img *ngIf="!getTeams()?.image" alt="Silhouette of a Landscape" src="../../../assets/images/landscape-100.png" />
-    <img *ngIf="getTeams()?.image" alt="Custom picture" [src]="getTeams().image" />
-  </ion-avatar>
-  <ion-icon name="link-outline"></ion-icon>
   <ion-avatar class="person">
     <img *ngIf="!getDriver()?.image" alt="Silhouette of a person's head" src="../../../assets/images/user-96.png" />
     <img *ngIf="getDriver()?.image" alt="Person picture" [src]="getDriver().image" />
   </ion-avatar>
+  <ion-icon name="link-outline"></ion-icon>
+  <ion-avatar class="task">
+    <img *ngIf="!getTeams()?.image" alt="Silhouette of a Landscape" src="../../../assets/images/landscape-100.png" />
+    <img *ngIf="getTeams()?.image" alt="Custom picture" [src]="getTeams().image" />
+  </ion-avatar>
+
+  
 
   
   <!-- BUTTONS -->
-  <ion-button icon-only fill="clear" (click)="onEditClick()"><ion-icon style="zoom:1.5" name="ellipsis-horizontal-circle-outline" ></ion-icon></ion-button>
+  <ion-button icon-only fill="clear" color="success" (click)="onEditClick()"><ion-icon style="zoom:1.5" name="ellipsis-horizontal-circle-outline" ></ion-icon></ion-button>
   <ion-button icon-only fill="clear" color="danger" (click)="onDeleteClick()"><ion-icon style="zoom:1.5" name="close-circle-outline" ></ion-icon></ion-button>
 </ion-item>
 
 <ion-item-options>
   <ion-item-option (click)="onEditClick()">
-    <ion-icon slot="end" name="create"></ion-icon>
+    <ion-icon slot="end" name="Edit" color="danger"></ion-icon>
     {{'Edit' | uppercase}}
   </ion-item-option>
   <ion-item-option (click)="onDeleteClick()" color="danger">

@@ -51,7 +51,7 @@ export class SelectableTeamComponent implements OnInit,ControlValueAccessor {
   onTeamClicked(teams:teamsModel, accordion:IonAccordionGroup){
     this.teams = teams;
     accordion.value='';
-    this.propagateChange(this.teams.id);
+    this.propagateChange(this.teams.id-1);
   }
 
 }

@@ -46,6 +46,10 @@ export class DriversManagePage implements OnInit {
     });
   }
 
+
+
+
+
   onEditManagement(driversManageData: DriversManagementFormComponent){
     this.presentManagementForm(driversManageData);
   }
@@ -76,7 +80,7 @@ export class DriversManagePage implements OnInit {
     const { role } = await alert.onDidDismiss();
   }
 
-  onNewDriverManagement(driversManageData: driversManageModel){
+  onNewDriverManagement(){
     this.presentManagementForm(null!);  
   }
 

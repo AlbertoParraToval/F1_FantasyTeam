@@ -1,6 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ModalController } from '@ionic/angular';
+import { TranslateService } from '@ngx-translate/core';
+import { lastValueFrom } from 'rxjs';
 import { driversManageModel } from '../../models';
 import { DriversService, TeamsService } from '../../services';
 
@@ -11,8 +13,10 @@ import { DriversService, TeamsService } from '../../services';
 })
 export class DriversManagementFormComponent implements OnInit {
 
+  
   form:FormGroup;
   mode: "New" | "Edit" = "New";
+  button_text: "";
   @Input('driversManageData') set driverManagement(driversManageData:driversManageModel){    
     if(driversManageData){
       this.form.controls['id'].setValue(driversManageData.id);
@@ -26,7 +30,8 @@ export class DriversManagementFormComponent implements OnInit {
   constructor(private formBuilder:FormBuilder,
               private driversSVC:DriversService,
               private teamsSVC:TeamsService,
-              private modal:ModalController
+              private modal:ModalController,
+              private translate:TranslateService
     ) {
     this.form = this.formBuilder.group({ 
       id:[null],
@@ -36,7 +41,14 @@ export class DriversManagementFormComponent implements OnInit {
     });
   }
 
-  ngOnInit() {}
+  async ngOnInit() {
+    if(this.mode == "Edit")
+      this.button_text = await lastValueFrom(this.translate.get('assignment.edit'));  
+    else
+      this.button_text = await this.translate.get('assignment.new').toPromise();
+  }
+
+
 
   onSubmit(){
       this.modal.dismiss({driversManageData: this.form.value, mode: this.mode}, 'ok')
