@@ -1,23 +1,23 @@
 <ion-accordion-group >
   <ion-item color="dark">
-    <ion-accordion color="dark" >
+    <ion-accordion [ngStyle]="{'background-color':'grey'}" >
       <ion-item  slot="header" color="dark">
         <ion-avatar style="width:50px;height:50px;margin:10px;margin-right:20px">
         <img *ngIf="driverdata.image" alt="Person picture" [src]="driverdata.image" />
           <img  *ngIf="!driverdata.image"  alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
         </ion-avatar>
-        <ion-label>{{'driversT.nombre'|translate}} {{driverdata.name}} </ion-label>
+        <ion-label class="textoC">{{'driversT.nombre'|translate}} {{driverdata.name}} </ion-label>
       </ion-item>
 
 
-      <div class="ion-padding" slot="content">
-      <ion-text class="textoC" color="dark">
+      <div class="ion-padding" slot="content" >
+      <ion-text class="textoC" color="light" >
         {{'driversT.apodo'|translate}}  "{{driverdata.nickname }}".
       </ion-text> 
       </div>
 
       <div class="ion-padding" slot="content" >
-        <ion-text class="textoC" color="dark">
+        <ion-text class="textoC" color="light">
           {{'driversT.dorsal'|translate}} {{driverdata.dorsal}}.
         </ion-text>
       </div>

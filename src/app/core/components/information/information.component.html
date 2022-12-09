@@ -1,15 +1,19 @@
-<ion-content Color="dark">
+<ion-content color="dark">
   <ion-grid>
-  <ion-card color="dark">
-    <ion-card-header>
-      <img alt="Mi profile" src="./../../../../assets/images/fotos/Alberto_profile.jpg" />
-      <ion-card-title>{{'information.name' | translate}}</ion-card-title>
-      <ion-card-subtitle>{{'information.subName' | translate}}</ion-card-subtitle>
-    </ion-card-header>
-  
-    <ion-card-content>
+    <ion-row >
+      <ion-col size="12" size-lg="6" size-sm="11">
+        <ion-card color="dark">
+          <ion-card-header>
+            <img alt="Mi profile" src="./../../../../assets/images/fotos/Alberto_profile.jpg" />
+            <ion-card-title>{{'information.name' | translate}}</ion-card-title>
+            <ion-card-subtitle>{{'information.subName' | translate}}</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col size="12" size-lg="6" size-sm="11">
+    <ion-card-content >
       <ion-text >
-        <h2>{{'information.Intro' | translate}}</h2>
+        <h2 [ngStyle]="{'background-color':'grey' }" >{{'information.Intro' | translate}}</h2>
       </ion-text>
       <ion-text>
         {{'information.texto1' | translate}}
@@ -18,12 +22,15 @@
 
     <ion-card-content>
       <ion-text >
-        <h2>{{'information.Intro2' | translate}}</h2>
+        <h2 [ngStyle]="{'background-color':'grey' }" >{{'information.Intro2' | translate}}</h2>
       </ion-text>
       <ion-text >
         {{'information.texto2' | translate}}
       </ion-text>
     </ion-card-content>
-  </ion-card>
+      </ion-col>
+    </ion-row>
+  
+
 </ion-grid>
 </ion-content>
