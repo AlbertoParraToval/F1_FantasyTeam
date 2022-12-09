@@ -7,26 +7,27 @@ import { HomePageRoutingModule } from './home-routing.module';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { createTranslateLoader } from 'src/app/core/utils/translator';
+import { CoreModule } from "../../core/core.module";
 
 
 
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    HomePageRoutingModule,
-    HttpClientModule,
+    declarations: [HomePage],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        HomePageRoutingModule,
+        HttpClientModule,
         TranslateModule.forChild({
-      loader: {
-      provide: TranslateLoader,
-      useFactory: (createTranslateLoader),
-      deps: [HttpClient]
-      }
-      }),
-    
-  ],
-  declarations: [HomePage]
+            loader: {
+                provide: TranslateLoader,
+                useFactory: (createTranslateLoader),
+                deps: [HttpClient]
+            }
+        }),
+        CoreModule
+    ]
 })
 export class HomePageModule {}

@@ -10,7 +10,7 @@ export class ReproductorMusicComponent implements OnInit {
   audio = new Audio();
   reproduciendo: boolean = false;
   constructor() {
-    this.audio.src="";
+    this.audio.src= 'assets/audio/himno.mp3';
     this.audio.load();
   }
 
@@ -18,13 +18,13 @@ export class ReproductorMusicComponent implements OnInit {
     this.audio.load();
     this.audio.play();
     this.reproduciendo = true;
-  
   }
 
   pause(){
     this.audio.pause();
     this.reproduciendo = false;
   }
+
 
 
 
