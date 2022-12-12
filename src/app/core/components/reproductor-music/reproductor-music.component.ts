@@ -25,9 +25,6 @@ export class ReproductorMusicComponent implements OnInit {
     this.reproduciendo = false;
   }
 
-
-
-
   ngOnInit() {}
 
 }
