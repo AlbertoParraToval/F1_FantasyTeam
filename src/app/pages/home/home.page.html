@@ -2,7 +2,7 @@
   <ion-header >
     <ion-toolbar color="dark">
       <ion-title size="large">{{'home.title'| translate}}</ion-title>
-      <ion-button class="button_Tool" slot="end" color="danger" routerLink="/about-me">  <ion-icon name="information "></ion-icon></ion-button>
+      <ion-button shape="round" class="button_Tool" slot="end" color="danger"  (click)="showLoading()" routerLink="/about-me">  <ion-icon name="Person-outline" ></ion-icon></ion-button>
     </ion-toolbar>
     
   </ion-header>
@@ -18,9 +18,10 @@
             </ion-card-header>
 
             <ion-card-content>
-              <img src="./../../../assets/images/fotos/img2.jpg"  alt="drivers F1" />
+            
+              <img src="./../../../assets/images/fotos/img2.jpg"  alt="drivers F1"  routerLink="/drivers" />
             </ion-card-content>
-            <ion-button class="button_Tool" color="danger" routerLink="/drivers">{{'home.buttonView'| translate}}</ion-button>
+          
           </ion-card>
         </ion-col>
           <!--2º Card-->
@@ -31,9 +32,9 @@
             </ion-card-header>
 
             <ion-card-content>
-              <img src="./../../../assets/images/fotos/img1.jpg" alt="christian horner" />
+              <img src="./../../../assets/images/fotos/img1.jpg" alt="christian horner" routerLink="/drivers-manage" />
             </ion-card-content>
-            <ion-button class="button_Tool" color="danger" routerLink="/drivers-manage"> {{'home.buttonView'| translate}} </ion-button>
+          
           </ion-card>
         </ion-col>
         <!--3º Card-->
@@ -43,9 +44,9 @@
               <ion-card-title>{{'home.page3'| translate}}</ion-card-title>
             </ion-card-header>
             <ion-card-content>
-              <img src="./../../../assets/images/fotos/img3.jpg" alt="f1 fotos" />
+              <img src="./../../../assets/images/fotos/img3.jpg" alt="f1 fotos"  routerLink="/teams"/>
             </ion-card-content>
-            <ion-button class="button_Tool" color="danger" routerLink="/teams"> {{'home.buttonView'| translate}}</ion-button>
+            
           </ion-card>
         </ion-col>
       </ion-row>

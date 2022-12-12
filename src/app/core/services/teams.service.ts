@@ -81,8 +81,6 @@ export class TeamsService {
     id:number = this.teamsInfo.length + 1;
     constructor() { }
 
-
-
   public getTeam(): teamsModel[] {
     return this.teamsInfo;
   }
@@ -96,14 +94,12 @@ export class TeamsService {
   }
 
   addTeam(teamdata:teamsModel){
-    //console.log(userdata)
     teamdata.id = this.id++
     this.teamsInfo.push(teamdata);
   }
 
   updateTeam(teamUpdate:teamsModel){
     var teamdata= this.teamsInfo.find(p=>p.id==teamUpdate.id);
-    //console.log(userdata) me lo lee
     if(teamdata){
       teamdata.name = teamUpdate.name;
       teamdata.description = teamUpdate.description;

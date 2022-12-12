@@ -1,11 +1,11 @@
 import { LOCALE_ID, NgModule } from '@angular/core';
 import { CommonModule, registerLocaleData } from '@angular/common';
 import { InformationComponent } from './components/information/information.component';
-import { IonicModule } from '@ionic/angular';
+import { IonicModule, LoadingController } from '@ionic/angular';
 import { FormsModule, ReactiveFormsModule, SelectControlValueAccessor } from '@angular/forms';
 import { DriversCComponent } from './components/drivers-c/drivers-c.component';
 import { DriversFormsComponent } from './components/drivers-forms/drivers-forms.component';
-import { SelectableDriverComponent, SelectableTeamComponent, TeamsCComponent, TeamsFormsComponent } from './components';
+import {  SelectableDriverComponent, SelectableTeamComponent, TeamsCComponent, TeamsFormsComponent } from './components';
 import { DriversManagementComponent } from './components/drivers-management/drivers-management.component';
 import { DriversManagementFormComponent } from './components/drivers-management-form/drivers-management-form.component';
 import { LocaleService } from './services';
@@ -38,7 +38,7 @@ export class LocaleId extends String {
 
 
 @NgModule({
-  declarations: [InformationComponent, DriversCComponent, DriversFormsComponent, TeamsCComponent, TeamsFormsComponent, DriversManagementComponent, DriversManagementFormComponent, SelectableDriverComponent,SelectableTeamComponent,ReproductorMusicComponent],
+  declarations: [InformationComponent, DriversCComponent, DriversFormsComponent, TeamsCComponent, TeamsFormsComponent, DriversManagementComponent, DriversManagementFormComponent, SelectableDriverComponent,SelectableTeamComponent,ReproductorMusicComponent,],
   imports: [
     CommonModule,
     IonicModule,
@@ -56,7 +56,7 @@ export class LocaleId extends String {
     
     
   ],
-  exports:[InformationComponent, DriversCComponent, DriversFormsComponent, TeamsCComponent,TeamsFormsComponent,DriversManagementComponent, DriversManagementFormComponent,SelectableDriverComponent,SelectableTeamComponent,ReproductorMusicComponent],
+  exports:[InformationComponent, DriversCComponent, DriversFormsComponent, TeamsCComponent,TeamsFormsComponent,DriversManagementComponent, DriversManagementFormComponent,SelectableDriverComponent,SelectableTeamComponent,ReproductorMusicComponent,],
   
   providers:[{
     provide: LOCALE_ID,
