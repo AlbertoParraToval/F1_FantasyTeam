@@ -17,12 +17,10 @@ export class TeamsCComponent implements OnInit {
   ngOnInit() {}
 
   onEditClick() {
-    //console.log(this.taskdata)
     this.onEdit.emit(this.teamdata);
   }
 
   onDeleteClick() {
-    //console.log(this.userdata) me pilla el userdata
     this.onDelete.emit(this.teamdata);
   }
 }

@@ -16,7 +16,6 @@ import en from '@angular/common/locales/en';
 import es from '@angular/common/locales/es';
 import { ReproductorMusicComponent } from './components/reproductor-music/reproductor-music.component';
 
-//Traducción En proceso (Hacer en el Finde)
 
 registerLocaleData(en);
 registerLocaleData(es);

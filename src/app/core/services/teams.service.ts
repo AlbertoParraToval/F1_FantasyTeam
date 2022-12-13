@@ -4,7 +4,6 @@ import { teamsModel } from '../models';
   providedIn: 'root'
 })
 export class TeamsService {
-  
   public teamsInfo: teamsModel[] = [
     {
       id: 1,
@@ -106,6 +105,5 @@ export class TeamsService {
       teamdata.puntosTemporada = teamUpdate.puntosTemporada;
       teamdata.image = teamUpdate.image;
     }
-    
   }
 }

@@ -12,8 +12,6 @@ import { DriversService, TeamsService } from '../../services';
   styleUrls: ['./drivers-management-form.component.scss'],
 })
 export class DriversManagementFormComponent implements OnInit {
-
-  
   form:FormGroup;
   mode: "New" | "Edit" = "New";
   button_text: "";
@@ -43,15 +41,13 @@ export class DriversManagementFormComponent implements OnInit {
 
   async ngOnInit() {
     if(this.mode == "Edit")
-      this.button_text = await lastValueFrom(this.translate.get('assignment.edit'));  
+      this.button_text = await lastValueFrom(this.translate.get('driversManageData.edit'));  
     else
-      this.button_text = await this.translate.get('assignment.new').toPromise();
+      this.button_text = await this.translate.get('driversManageData.new').toPromise();
   }
 
-
-
   onSubmit(){
-      this.modal.dismiss({driversManageData: this.form.value, mode: this.mode}, 'ok')
+      this.modal.dismiss({driversManageData: this.form.value, mode: this.mode}, 'ok');
   }
 
   onDismiss(_result:any){
@@ -65,6 +61,4 @@ export class DriversManagementFormComponent implements OnInit {
   getTeams(){
     return this.teamsSVC.getTeam();
   }
-
-
 }

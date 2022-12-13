@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { IonItemSliding } from '@ionic/angular';
 import { driversManageModel, driversModel, teamsModel } from '../../models';
 import { DriversManageService, DriversService, TeamsService } from '../../services';
 
@@ -12,6 +13,7 @@ export class DriversManagementComponent implements OnInit {
   @Output() onEdit = new EventEmitter();
   @Output() onDelete = new EventEmitter();
   @Input() driversManageData : driversManageModel;
+
   
   constructor(
     private driversSvc: DriversService,
