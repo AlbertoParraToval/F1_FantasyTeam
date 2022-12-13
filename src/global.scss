@@ -24,3 +24,23 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+@font-face {   
+  font-family: 'Merry_Normal';    
+  src: url('../src/assets/fonts/Merriweather-Regular.ttf');
+}
+
+@font-face {   
+  font-family: 'Merry_Bold';  
+  src: url('./assets/fonts/Merriweather-Bold.ttf');
+}
+
+@font-face {   
+  font-family: 'Merry_Italic';  
+  src: url('./assets/fonts/Merriweather-Italic.ttf');
+}
+
+@font-face {   
+  font-family: 'Merry_BoldItalic';  
+  src: url('./assets/fonts/Merriweather-Light.ttf');
+}
