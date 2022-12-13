@@ -1,9 +1,18 @@
 ion-grid{
   text-align: center;
   position: relative;
-  margin-top: 5%;
-  padding: 3px;
-
+  align-content: center;
+  align-items: center;
+  padding: 2px;
 }
 
+ion-card{
+  width: fit-content;
+  align-content: center;
+  align-self: center;
+}
 
+img{
+  align-content: center;
+  width: auto;
+}

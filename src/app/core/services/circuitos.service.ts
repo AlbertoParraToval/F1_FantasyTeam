@@ -60,7 +60,7 @@ export class CircuitosService {
       id:9,
       nomCircuito:"	Monza",
       Pais:"Italia",
-      foto:"https://drive.google.com/uc?export=view&id=1OUEj5zmiPiokKbmK4DIWxo9hBU-6PuYb"
+      foto:"https://drive.google.com/uc?export=view&id=1WyRK8VAjnQfK5XprZ9Q9_C8AbH796RhC"
     },
     {
       id:10,
@@ -83,7 +83,6 @@ export class CircuitosService {
 
   ]
   constructor() { }
-   //Aumente el id
   id:number = this.circuits.length + 1 ;
 
   public getCircuit(): calendarModel[] {

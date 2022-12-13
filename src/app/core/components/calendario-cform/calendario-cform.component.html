@@ -1,0 +1,34 @@
+
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-title>{{'.title' |translate}}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="onDismiss(null)">{{'.btn_Cerrar' | translate}}</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <form [formGroup] = "form" (keyup.enter)="onSubmit()">
+    <ion-item>
+      <ion-label position="floating">
+        {{'.nombre' |translate}}
+      </ion-label>
+      <ion-input type="text" placeholder="Nombre del Circuito" formControlName="nomCircuito"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">
+        {{'.pts'|translate}}
+      </ion-label>
+      <ion-input type="text" placeholder="Introduce el País del circuito" formControlName="Pais"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">
+        {{'.description'|translate}}
+      </ion-label>
+      <ion-input type="text" placeholder="Introduce un link de a una imagen" formControlName="foto"></ion-input>
+    </ion-item>
+    <ion-button color="medium" (click)="onSubmit()"  [disabled]="!form.valid" type="submit">{{mode=="Edit"?"Modificar":"Añadir" | translate}}</ion-button>
+  </form>
+</ion-content>
