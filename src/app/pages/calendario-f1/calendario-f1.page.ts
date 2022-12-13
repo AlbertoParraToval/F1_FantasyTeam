@@ -58,17 +58,17 @@ export class CalendarioF1Page implements OnInit {
 
   async onDeleteAlert(circuitdata: calendarModel) {
     const alert = await this.alert.create({
-      header: '¿Seguro, no podrás volver atrás?',
+      header: 'Sure?, you will not able to back again ',
       buttons: [
         {
-          text: 'Cancelar',
+          text: 'Cancel',
           role: 'cancel',
           handler: () => {
             console.log('Operacion cancelada');
           },
         },
         {
-          text: 'Borrar',
+          text: 'Delete',
           role: 'confirm',
           handler: () => {
             this.circuitSvc.deleteCircuitById(circuitdata.id);

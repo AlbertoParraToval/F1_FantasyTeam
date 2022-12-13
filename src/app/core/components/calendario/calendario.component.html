@@ -1,7 +1,6 @@
 <ion-grid color="dark">
   <ion-card color="medium">
     <ion-card-header>
-      <img *ngIf="!circuitdata.foto" src="\assets\user.png" />
       <img *ngIf="circuitdata.foto" alt="" [src]="circuitdata.foto" />
     </ion-card-header>
       <ion-card-subtitle>{{circuitdata.nomCircuito}}.</ion-card-subtitle>

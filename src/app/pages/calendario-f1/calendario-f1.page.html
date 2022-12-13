@@ -1,13 +1,17 @@
 <ion-header>
   <ion-toolbar color="dark">
-    <ion-title >{{'PageTitulos.calendario'}}</ion-title>
+    <ion-title >{{'PageTitulos.circuit' | translate}}</ion-title>
     <!--BOTON RETURN DE MOMENTO HASTA PODER HACER EL MENU-->
-    <ion-back-button slot="start" defaultHref="/">Return</ion-back-button>
+    <ion-back-button slot="start" defaultHref="/"></ion-back-button>
     <ion-button color="medium"   (click)="onNewCircuit()" class="button_Tool" slot="end" style="margin:10px;width:50px;height:50px;--border-radius:50%;margin-right: 2%;" icon-only><ion-icon style="zoom:2" name="add-outline"></ion-icon></ion-button>
   </ion-toolbar>
 </ion-header>
 <ion-content color="dark">
+  <ion-row>
+
+  
   <ion-col *ngFor="let circuitdata of getCircuits()"  size="12" size-lg="3" size-sm="6">
     <app-calendario  [circuitdata]="circuitdata" (onEdit)="onEditCircuit($event)"  (onDelete)="onDeleteCircuit($event)" ></app-calendario>
   </ion-col>
+</ion-row>
 </ion-content>

@@ -7,89 +7,71 @@
       "buttonView":"Ver"
   },
 
-
-
   "PageTitulos": {
     "team": "Equipos",
     "driver":"Pilotos",
-    "dManage":"Fichajes"
+    "dManage":"Fichajes",
+    "circuit":"Circuitos"
 },
 
+  "driversT":{
+    "nombre":"Nombre: ",
+    "apodo":"Apodo: ",
+    "dorsal":"Dorsal: "
+  },
 
-"driversT":{
-  "nombre":"Nombre: ",
-  "apodo":"Apodo: ",
-  "dorsal":"Dorsal: "
-},
-
-
-"TeamsComponentF":{
-  "title":"Team Information",
+  "TeamsComponentF":{
+    "title":"Team Information",
     "Nombre":"Nombre",
     "Pts":"Puntos",
     "Descripcion":"Descripcion",
     "foto":"Foto",
     "btn_Cerrar":"Cerrar"
+  },
 
-    
-},
+  "ManageForm":{
+    "contrato":"Duración Contrato",
+    "opcion1":"1 año",
+    "opcion2":"2 años",
+    "opcion3":"3 años",
+    "opcion4":"4 años"
+  },
 
-"ManageForm":{
-  "contrato":"Duración Contrato",
-  "opcion1":"1 año",
-  "opcion2":"2 años",
-  "opcion3":"3 años",
-  "opcion4":"4 años"
-},
-
-"selectables":{
-  "team":"Selecciona un equipo",
-  "driver":"Selecciona un piloto"
-},
+  "selectables":{
+    "team":"Selecciona un equipo",
+    "driver":"Selecciona un piloto"
+  },
 
 
-"DriversComponentF":{
-  "title":"Driver Information",
-  "nombre":"Nombre",
-  "apodo":"Apodo",
-  "dorsal":"Dorsal",
-  "foto":"Foto",
-  "btn_Cerrar":"Cerrar"
-},
+  "DriversComponentF":{
+    "title":"Driver Information",
+    "nombre":"Nombre",
+    "apodo":"Apodo",
+    "dorsal":"Dorsal",
+    "foto":"Foto",
+    "btn_Cerrar":"Cerrar"
+  },
 
+  "circuit":{
+    "title":"Informacion Circuito",
+    "nombre":"Nombre",
+    "pais":"Pais",
+    "foto":"Foto",
+    "btn_Cerrar":"Cerrar"
+  },
 
+  "about-me": {
+    "title": "Sobre Mi",
+    "Himno":"Himno Oficial de la F1 ",
+    "redes":"Mis redes sociales"
+  },
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"about-me": {
-  "title": "Sobre Mi",
-  "Himno":"Himno Oficial de la F1 "
-},
-
-"information":{
-  "name":"Alberto Parra Toval",
-  "subName":"Proyecto Ionic de la asignatura de ADD/HLC.",
-  "Intro":"Introducción",
-  "texto1":" A la hora de plantearme realizar la actividad de ionic que el profesor nos planteó, quise hacer una App que siempre he querido tener. Como fan de la F1 desde chiquitito pues me hubiese gustado que en una App pudieses editar los pilotos y ponerlos en diferentes equipos a los que están en la realidad.",
-  "Intro2":"¿Cómo funciona esta App?",
-  "texto2":" Esta App se encuentra dividida en 3 páginas, la 1º 'Pilotos' donde se recogerá una lista de pilotos pudiendo insertar, modificar y borrar a nuestro antojo, una 2 página de 'Equipos' donde se recogerá tambien otra lista donde se modificará, insertará y borrará los datos de la misma.Por otro lado habrá una 3º página que se centrará en enlazar las dos anteriores pero siguiendo la misma funcionalidad, es decir, borrar, modificar e insertar."
-  
-}
-
-
-
-
-
+  "information":{
+    "name":"Alberto Parra Toval",
+    "subName":"Proyecto Ionic de la asignatura de ADD/HLC",
+    "Intro":"Introducción",
+    "texto1":" A la hora de plantearme realizar la actividad de ionic que el profesor nos planteó, quise hacer una App que siempre he querido tener. Como fan de la F1 desde chiquitito pues me hubiese gustado que en una App pudieses editar los pilotos y ponerlos en diferentes equipos a los que están en la realidad.",
+    "Intro2":"¿Cómo funciona esta App?",
+    "texto2":" Esta App se encuentra dividida en 3 páginas, la 1º 'Pilotos' donde se recogerá una lista de pilotos pudiendo insertar, modificar y borrar a nuestro antojo, una 2 página de 'Equipos' donde se recogerá tambien otra lista donde se modificará, insertará y borrará los datos de la misma.Por otro lado habrá una 3º página que se centrará en enlazar las dos anteriores pero siguiendo la misma funcionalidad, es decir, borrar, modificar e insertar."
+  }
 }

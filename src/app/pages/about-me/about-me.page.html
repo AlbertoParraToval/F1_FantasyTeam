@@ -39,11 +39,14 @@
 
     <ion-card-content>
       <ion-text >
-        <h2 [ngStyle]="{'background-color':'grey' }" >{{'Mis redes sociales' | translate}}</h2>
+        <h2 [ngStyle]="{'background-color':'grey' }" >{{'about-me.redes' | translate}}</h2>
       </ion-text>
-      <ion-button><ion-icon name="logo-github"></ion-icon></ion-button>
-      <ion-button><ion-icon name="logo-github"></ion-icon></ion-button>
-      <ion-button><ion-icon name="mail-outline"></ion-icon ></ion-button>
+      <ion-grid>
+        <ion-button color="dark"><ion-icon name="logo-github" color="light"></ion-icon></ion-button>
+        <ion-button color="dark"><ion-icon name="logo-twitter" color="secondary"></ion-icon></ion-button>
+        <ion-button color="dark"><ion-icon name="mail-outline" color="success"></ion-icon ></ion-button>
+      </ion-grid>
+      
     </ion-card-content>
 
       </ion-col>
