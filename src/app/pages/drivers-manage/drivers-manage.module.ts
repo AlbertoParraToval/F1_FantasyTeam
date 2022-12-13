@@ -21,13 +21,13 @@ import { createTranslateLoader } from 'src/app/core/utils/translator';
         DriversManagePageRoutingModule,
         CoreModule,
         HttpClientModule,
-       TranslateModule.forChild({
-      loader: {
-      provide: TranslateLoader,
-      useFactory: (createTranslateLoader),
-      deps: [HttpClient]
-      }
-      }),
+    TranslateModule.forChild({
+    loader: {
+    provide: TranslateLoader,
+    useFactory: (createTranslateLoader),
+    deps: [HttpClient]
+    }
+    }),
     ]
 })
 export class DriversManagePageModule {}
