@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { driversManageModel, teamsModel } from '../models';
+import { driversManageModel } from '../models';
 
 @Injectable({
   providedIn: 'root'

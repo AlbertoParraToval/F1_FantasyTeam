@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'drivers-manage',
     loadChildren: () => import('./pages/drivers-manage/drivers-manage.module').then( m => m.DriversManagePageModule)
   },
+  {
+    path: 'calendario-f1',
+    loadChildren: () => import('./pages/calendario-f1/calendario-f1.module').then( m => m.CalendarioF1PageModule)
+  },
 ];
 
 @NgModule({

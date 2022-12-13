@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController, ModalController } from '@ionic/angular';
-import { Console } from 'console';
-import { DriversCComponent, DriversManagementFormComponent, driversManageModel, DriversManageService } from 'src/app/core';
+import { DriversManagementFormComponent, driversManageModel, DriversManageService } from 'src/app/core';
 
 @Component({
   selector: 'app-drivers-manage',

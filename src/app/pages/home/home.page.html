@@ -2,8 +2,10 @@
   <ion-header >
     <ion-toolbar color="dark">
       <ion-title size="large">{{'home.title'| translate}}</ion-title>
+      <ion-button color="dark"  class="button_Tool"  routerLink="/calendario-f1" slot="end">CalendarioF1</ion-button>
       <ion-button shape="round" class="button_Tool" slot="end" color="danger"  (click)="showLoading()" routerLink="/about-me">  <ion-icon name="Person-outline" ></ion-icon></ion-button>
     </ion-toolbar>
+    
   </ion-header>
 
   <!--Mis cards-->
@@ -46,5 +48,5 @@
         </ion-col>
       </ion-row>
     </ion-grid>
-    <app-reproductor-music></app-reproductor-music>
+        <app-reproductor-music></app-reproductor-music>
 </ion-content>

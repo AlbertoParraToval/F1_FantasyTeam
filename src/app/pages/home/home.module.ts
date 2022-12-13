@@ -8,6 +8,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { createTranslateLoader } from 'src/app/core/utils/translator';
 import { CoreModule } from "../../core/core.module";
+import { CalendarioComponent } from "../../core/components/calendario/calendario.component";
 
 
 
@@ -27,7 +28,8 @@ import { CoreModule } from "../../core/core.module";
                 deps: [HttpClient]
             }
         }),
-        CoreModule
+        CoreModule,
+        
     ]
 })
 export class HomePageModule {}
