@@ -23,7 +23,7 @@ export class DriversManagementComponent implements OnInit {
 
   ngOnInit() {}
 
-  // METHODS
+
   getTeams():teamsModel{
     var teamId = this.driversManageData.teamId;
     if(teamId)
@@ -40,9 +40,11 @@ export class DriversManagementComponent implements OnInit {
 
   onEditClick(){
     this.onEdit.emit(this.driversManageData);
+    console.log(this.driversManageData);
   }
 
   onDeleteClick(){
     this.onDelete.emit(this.driversManageData);
+    console.log(this.driversManageData);
   }
 }

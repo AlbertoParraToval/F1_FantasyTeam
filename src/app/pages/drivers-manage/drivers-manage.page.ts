@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController, ModalController } from '@ionic/angular';
-import { DriversManagementFormComponent, driversManageModel, DriversManageService } from 'src/app/core';
+import { Console } from 'console';
+import { DriversCComponent, DriversManagementFormComponent, driversManageModel, DriversManageService } from 'src/app/core';
 
 @Component({
   selector: 'app-drivers-manage',
@@ -8,7 +9,7 @@ import { DriversManagementFormComponent, driversManageModel, DriversManageServic
   styleUrls: ['./drivers-manage.page.scss'],
 })
 export class DriversManagePage implements OnInit {
-  driverManage: driversManageModel;
+  driversManage_: driversManageModel;
   constructor(
     private driversManagementsSvc:DriversManageService,
     private modal:ModalController,
@@ -21,18 +22,19 @@ export class DriversManagePage implements OnInit {
     return this.driversManagementsSvc.getManagement();
   }
 
-  
-  async presentManagementForm(driversManageData:DriversManagementFormComponent){
+  async presentManagementForm(driversManageData:DriversManagementFormComponent | null){
+    console.log(driversManageData);
     const modal = await this.modal.create({
       component:DriversManagementFormComponent,
       componentProps:{
-        Manage: driversManageData
+        driversManageData: driversManageData
       },
-    });
+    }); 
+      console.log(driversManageData);
     modal.present();
+    console.log(driversManageData);
     modal.onDidDismiss().then(result=>{
       if(result && result.data){
-        
         switch(result.data.mode){
           case 'New':
             this.driversManagementsSvc.addManagement(result.data.driversManageData);
@@ -46,11 +48,8 @@ export class DriversManagePage implements OnInit {
     });
   }
 
-
-
-
-
   onEditManagement(driversManageData: DriversManagementFormComponent){
+    console.log(driversManageData);
     this.presentManagementForm(driversManageData);
   }
 
@@ -81,13 +80,11 @@ export class DriversManagePage implements OnInit {
   }
 
   onNewDriverManagement(){
-    this.presentManagementForm(null!);  
+    this.presentManagementForm(null);  
   }
 
   onDeleteManagement(driversManageData: driversManageModel){
     this.onDeleteAlert(driversManageData);
     
   }
-  
-
 }

@@ -15,12 +15,12 @@ export class DriversManagementFormComponent implements OnInit {
   form:FormGroup;
   mode: "New" | "Edit" = "New";
   button_text: "";
-  @Input('driversManageData') set driverManagement(driversManageData:driversManageModel){    
-    if(driversManageData){
-      this.form.controls['id'].setValue(driversManageData.id);
-      this.form.controls['driverId'].setValue(driversManageData.driverId);
-      this.form.controls['teamId'].setValue(driversManageData.teamId);
-      this.form.controls['duracionContrato'].setValue(driversManageData.duracionContrato);
+  @Input('driversManageData') set driversManageData(d:driversManageModel){    
+    if(d){
+      this.form.controls['id'].setValue(d.id);
+      this.form.controls['driverId'].setValue(d.driverId);
+      this.form.controls['teamId'].setValue(d.teamId);
+      this.form.controls['duracionContrato'].setValue(d.duracionContrato);
       this.mode = "Edit";
     }
 
@@ -31,6 +31,7 @@ export class DriversManagementFormComponent implements OnInit {
               private modal:ModalController,
               private translate:TranslateService
     ) {
+      
     this.form = this.formBuilder.group({ 
       id:[null],
       teamId:[-1,Validators.min(1)],

@@ -19,9 +19,27 @@ export class DriversManageService {
       duracionContrato:"1 Año"
     },
     {
-      id:3,
-      driverId:3,
-      teamId:3,
+      id:4,
+      driverId:4,
+      teamId:4,
+      duracionContrato:"1 Años"
+    },
+    {
+      id:5,
+      driverId:5,
+      teamId:5,
+      duracionContrato:"4 Años"
+    },
+    {
+      id:6,
+      driverId:6,
+      teamId:6,
+      duracionContrato:"1 Años"
+    },
+    {
+      id:7,
+      driverId:7,
+      teamId:7,
       duracionContrato:"2 Años"
     }
     ]
