@@ -11,7 +11,7 @@ export class CircuitosService {
       id:1,
       nomCircuito:"Albert Park",
       Pais:"Australia, Melbourne",
-      foto:"https://drive.google.com/uc?export=view&id=19DYL-GRrmMWBXoOYdFb6BwP2xpf6GRRF"
+      foto:"https://drive.google.com/uc?export=view&id=1DUX1qjWNiQ7q2HsJ9oJSbwT2k_XHTwEf"
     },
     {
       id:2,

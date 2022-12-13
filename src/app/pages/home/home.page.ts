@@ -13,7 +13,7 @@ export class HomePage {
   async showLoading() {
     const loading = await this.loadingCtrl.create({
       message: 'Loading...',
-      duration: 1000,
+      duration: 50,
       cssClass: 'custom-loading',
     });
 
