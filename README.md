@@ -37,6 +37,6 @@ La última página de la App, en ella encontrarás información sobre mi y mis p
 ![image](https://user-images.githubusercontent.com/91873665/207661853-f1afbf54-f61f-4929-9f3d-d2dd0e3733d2.png)
 
 ## Conclusión
-Desde mi punto de vista he disfrutado muchisimo el crear un proyecto como este, primero por como he dicho antes el hacer una App de un tema que me encanta como es la F1 pues no me daba problema o voluntad en ponerme hacerlo. En segundo lugar creo que gracias a este proyecto he aprendido lo básico a la hora de poder realizar una App en Ionic ya que he utilizado la mayoria de los components y documentación que hay disponible de la siguiente dirección [Ionic]:[https://ionicframework.com], gracias a ella he utilizado componentes como Cards, Grids, Accordions.
+Desde mi punto de vista he disfrutado muchisimo el crear un proyecto como este, primero por como he dicho antes el hacer una App de un tema que me encanta como es la F1 pues no me daba problema o voluntad en ponerme hacerlo. En segundo lugar creo que gracias a este proyecto he aprendido lo básico a la hora de poder realizar una App en Ionic ya que he utilizado la mayoria de los components y documentación que hay disponible de la siguiente dirección [Ionic]:(https://ionicframework.com), gracias a ella he utilizado componentes como Cards, Grids, Accordions.
 
 ## Video
