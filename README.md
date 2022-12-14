@@ -12,7 +12,13 @@ A la hora de elegir tema para hacer el proyecto del primer trimestre de la asign
 
 ## ¿Cómo funciona?
 El funcionamiento de la App se comprende de manera muy intuitiva, esta se compone de una página "home" donde a través de ella podremos acceder a las demas páginas de la App, las otras son "Pilotos", "Equipos", "About me", "Calendario F1" y un complemento demás donde podremos escuchar el himno de la F1 cuando lo deseemos.
+
+#### Página Home
+![image](https://user-images.githubusercontent.com/91873665/207657586-a7abe5b2-d87b-41de-af6d-b0fd98da9b51.png)
+
 #### Página De Pilotos
+![image](https://user-images.githubusercontent.com/91873665/207657702-00ef7cde-8879-4a99-b32c-fd3dd61ef2db.png)
+
 
 
 
