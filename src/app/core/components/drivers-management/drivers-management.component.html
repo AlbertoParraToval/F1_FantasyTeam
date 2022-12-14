@@ -1,4 +1,4 @@
-<ion-item color="dark">
+<ion-item  color="dark">
   <ion-avatar class="driver">
     <img *ngIf="!getDriver()?.image" alt="Silhouette of a person's head" src="../../../assets/images/user-96.png" />
     <img *ngIf="getDriver()?.image" alt="Person picture" [src]="getDriver().image" />
@@ -14,11 +14,11 @@
 
   
   <!-- BUTTONS -->
-  <ion-button icon-only fill="clear" color="success" (click)="onEditClick()"><ion-icon style="zoom:1.5" name="ellipsis-horizontal-circle-outline" ></ion-icon></ion-button>
-  <ion-button icon-only fill="clear" color="danger" (click)="onDeleteClick()"><ion-icon style="zoom:1.5" name="close-circle-outline" ></ion-icon></ion-button>
+  <ion-button icon-only fill="clear" color="success" slot="end" (click)="onEditClick()"><ion-icon style="zoom:1.5" name="ellipsis-horizontal-circle-outline" ></ion-icon></ion-button>
+  <ion-button icon-only fill="clear" color="danger" slot="end" (click)="onDeleteClick()"><ion-icon style="zoom:1.5" name="close-circle-outline" ></ion-icon></ion-button>
 </ion-item>
 
-<ion-item-options>
+<ion-item-options >
   <ion-item-option (click)="onEditClick()">
     <ion-icon slot="end" name="Edit" color="danger"></ion-icon>
     {{'Edit' | uppercase}}

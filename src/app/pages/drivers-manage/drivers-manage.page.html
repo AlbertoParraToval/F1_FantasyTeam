@@ -9,7 +9,7 @@
 <ion-content color="dark">
   <ion-grid color="dark"> 
     <ion-row>
-      <ion-col color="dark"  *ngFor="let driverManage of getManagements()" size="10" size-lg="2" size-sm="6">
+      <ion-col color="dark"  *ngFor="let driverManage of getManagements()" size="10" size-lg="10" size-sm="6">
         <app-drivers-management [driversManageData]="driverManage"  (onEdit)="onEditManagement($event)" (onDelete)="onDeleteManagement($event)"></app-drivers-management>
       </ion-col>
     </ion-row>
