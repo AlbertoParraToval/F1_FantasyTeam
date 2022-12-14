@@ -15,7 +15,7 @@ export class CircuitosService {
     },
     {
       id:2,
-      nomCircuito:"	Hockenheimring",
+      nomCircuito:"Hockenheimring",
       Pais:"Alemania",
       foto:"https://drive.google.com/uc?export=view&id=1K6a3Kc2oAfA490FkldUkNeoj6c8wKbVI"
     },

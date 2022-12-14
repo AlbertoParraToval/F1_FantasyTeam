@@ -2,7 +2,7 @@
   <ion-toolbar color="medium">
     <ion-title>{{'DriversComponentF.title' |translate}}</ion-title>
     <ion-buttons slot="end">
-      <ion-button (click)="onDismiss(null)">{{'DriversComponentF.btn_Cerrar' | translate}}</ion-button>
+      <ion-button (click)="onDismiss(null)">{{'DriversComponentF.btn_Cerrar' | translate | uppercase}}</ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -10,25 +10,25 @@
   <form [formGroup] = "form" (keyup.enter)="onSubmit()">
     <ion-item>
       <ion-label position="floating">
-        {{'DriversComponentF.nombre' |translate | uppercase}}
+        {{'DriversComponentF.nombre' |translate }}
       </ion-label>
       <ion-input type="text" placeholder="Introduce tu nombre completo" formControlName="name"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">
-        {{'DriversComponentF.apodo' |translate | uppercase}}
+        {{'DriversComponentF.apodo' |translate}}
       </ion-label>
       <ion-input type="text" placeholder="Introduce el apodo del piloto" formControlName="nickname"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">
-        {{'DriversComponentF.dorsal' |translate | uppercase}}
+        {{'DriversComponentF.dorsal' |translate }}
       </ion-label>
       <ion-input type="number" placeholder="Introduce un número de dorsal" formControlName="dorsal"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">
-        {{ 'DriversComponentF.foto' |translate | uppercase}}
+        {{ 'DriversComponentF.foto' |translate }}
       </ion-label>
       <ion-input type="routerLink" placeholder="Introduce la url de tu foto del drive" formControlName="image"></ion-input>
     </ion-item>

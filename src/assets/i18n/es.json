@@ -33,7 +33,9 @@
     "opcion1":"1 año",
     "opcion2":"2 años",
     "opcion3":"3 años",
-    "opcion4":"4 años"
+    "opcion4":"4 años",
+    "team":"Selecciona un equipo",
+    "driver":"Selecciona un piloto"
   },
 
   "selectables":{

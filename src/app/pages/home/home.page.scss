@@ -5,10 +5,12 @@ img{
 }
 ion-grid{
   margin-top: 2%;
+  font-family: "Merry_Light";
 }
 
 ion-card{
   margin-top:2% ;
+  font-family: "Merry_Light";
 }
 
 .imagen:hover {filter: opacity(.5);}
@@ -27,6 +29,7 @@ ion-title{
 
 ion-content{
   background-color: black;
+  font-family: "Merry_Light";
 }
 
 ion-card-title{
@@ -37,16 +40,8 @@ ion-card-title{
   background-color: rgb(124, 0, 0);
 }
 
-
-
-
 ion-card-content{
   padding: 20px;
+  font-family: "Merry_Light";
 }
 
-ion-card{
-  text-align: center;
-  color: white;
-  font-size: large;
-  font-style: initial;
-}

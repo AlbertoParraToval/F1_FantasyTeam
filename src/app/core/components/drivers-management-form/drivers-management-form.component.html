@@ -2,14 +2,22 @@
   <ion-toolbar color="medium">
     <ion-title>Fichaje</ion-title>
     <ion-buttons slot="end">
-      <ion-button (click)="onDismiss(null)"><ion-icon name="close-outline"></ion-icon></ion-button>
+      <ion-button (click)="onDismiss(null)">{{'DriversComponentF.btn_Cerrar' | translate | uppercase}}</ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 <ion-content class="ion-padding">
   <form [formGroup]="form" (ngSubmit)="onSubmit()" (keyup.enter)="onSubmit()">
-    <app-selectable-driver formControlName="driverId"></app-selectable-driver>
-    <app-selectable-team formControlName="teamId"></app-selectable-team>
+
+      <ion-label position="floating">{{ 'ManageForm.driver' | translate }}</ion-label>
+      <app-selectable-driver formControlName="driverId"></app-selectable-driver>
+
+
+    
+
+      <ion-label position="floating">{{ 'ManageForm.team' | translate }}</ion-label>
+      <app-selectable-team formControlName="teamId"></app-selectable-team>
+
     
     <ion-item>
       <ion-label position="floating">{{ 'ManageForm.contrato' | translate }}</ion-label>

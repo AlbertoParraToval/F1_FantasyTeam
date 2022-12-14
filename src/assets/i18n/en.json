@@ -41,7 +41,9 @@
     "opcion1":"1 year",
     "opcion2":"2 years",
     "opcion3":"3 years",
-    "opcion4":"4 years"
+    "opcion4":"4 years",
+    "team":"Choose a Team",
+    "driver":"Choose a Driver"
   },
 
   "selectables":{
