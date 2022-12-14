@@ -1,3 +1,9 @@
+///// SCSS STYLES //////
+ion-card-header.ios {
+  display: flex;
+  flex-flow: column-reverse;
+}
+
 .button_Tool{
   padding: 5px;
 }

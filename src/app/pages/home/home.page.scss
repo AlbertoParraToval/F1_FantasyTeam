@@ -1,4 +1,9 @@
-////// DISEÑOS PERSONALIZADOS /////
+///// SCSS STYLES //////
+ion-card-header.ios {
+  display: flex;
+  flex-flow: column-reverse;
+}
+
 img{
   width: 100%;
   position: relative;
