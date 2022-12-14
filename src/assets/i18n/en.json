@@ -25,7 +25,6 @@
   "TeamsComponentF":{
     "title":"Team Information",
     "nombre":"Name",
-    "pts":"Points",
     "description":"Description",
     "foto":"Photo",
     "btn_Cerrar":"Close"

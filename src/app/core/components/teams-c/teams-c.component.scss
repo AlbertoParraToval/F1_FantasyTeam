@@ -1,7 +1,6 @@
 ion-card-header{
   width:100%;
-  font-style: oblique;
-  
+  font-family: "Merry_Bold";
 }
 
 ion-card{
@@ -9,6 +8,6 @@ ion-card{
 }
 
 ion-card-content{
+  font-family: "Merry_Normal";
   text-align: justify;
-  text-decoration: solid;
 }

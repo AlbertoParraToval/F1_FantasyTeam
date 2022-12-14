@@ -3,10 +3,16 @@ ion-grid{
   position: relative;
   align-content: center;
   align-items: center;
+
   padding: 2px;
 }
 
+.imagen:hover {filter: opacity(.5);}
+.contenedor {overflow:hidden;}
+
 ion-card{
+  font-family: 'Merry_Italic';
+  font-size: large;
   width: fit-content;
   align-content: center;
   align-self: center;

@@ -12,7 +12,10 @@ ion-card{
 }
 
 .imagen:hover {filter: opacity(.5);}
-
+ion-title{
+  font-size: x-large;
+  font-family: "Merry_Italic";
+}
 .button_Tool{
   padding: 5px;
   border-radius: 80%;
