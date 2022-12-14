@@ -3,9 +3,8 @@
 ## Índice
 1. ¿Por qué F1_FantasyTeam?
 2. ¿Cómo funciona?
-3. Mejoras Posibles
-4. Conclusión
-5. Video/Presentación
+3. Conclusión
+4. Video/Presentación
 
 ## ¿Por qué F1_FantasyTeam?
 A la hora de elegir tema para hacer el proyecto del primer trimestre de la asignatura de ADD y HLC, pensé varios temas en que enfocarme, una barbería ya que mi amigo tiene una, un servicio de comida rápida o un concepto similar a este pero de la Liga Santander. Sin embargo, decidí elegir hacerlo de F1, ya que es uno de mis hobbies favoritos y pues me hace especial ilusión "recrear", por así decirlo una app que vaya sobre F1. 
@@ -37,4 +36,7 @@ Se basa en un página independiente a las otras aunque sigue basandose en la fun
 La última página de la App, en ella encontrarás información sobre mi y mis principales redes sociales y como contactar conmigo.
 ![image](https://user-images.githubusercontent.com/91873665/207661853-f1afbf54-f61f-4929-9f3d-d2dd0e3733d2.png)
 
+## Conclusión
+Desde mi punto de vista he disfrutado muchisimo el crear un proyecto como este, primero por como he dicho antes el hacer una App de un tema que me encanta como es la F1 pues no me daba problema o voluntad en ponerme hacerlo. En segundo lugar creo que gracias a este proyecto he aprendido lo básico a la hora de poder realizar una App en Ionic ya que he utilizado la mayoria de los components y documentación que hay disponible de la siguiente dirección [Ionic]:[https://ionicframework.com], gracias a ella he utilizado componentes como Cards, Grids, Accordions.
 
+## Video
