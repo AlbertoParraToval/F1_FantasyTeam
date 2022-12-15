@@ -43,13 +43,19 @@
         <h2 [ngStyle]="{'background-color':'grey' }" >{{'about-me.redes' | translate}}</h2>
       </ion-text>
       <ion-grid>
-        <ion-button color="dark"><ion-icon name="logo-github" color="light"></ion-icon></ion-button>
-        <ion-button color="dark"><ion-icon name="logo-twitter" color="secondary"></ion-icon></ion-button>
-        <ion-button color="dark"><ion-icon name="mail-outline" color="success"></ion-icon ></ion-button>
+        <ion-row >
+          <ion-col>
+            <ion-button color="dark"><ion-icon name="logo-github" color="light"></ion-icon></ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button color="dark"><ion-icon name="logo-twitter" color="secondary"></ion-icon></ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button color="dark"><ion-icon name="mail-outline" color="success"></ion-icon ></ion-button>
+          </ion-col>
+        </ion-row>
       </ion-grid>
-      
     </ion-card-content>
-
       </ion-col>
     </ion-row>
 </ion-grid>
