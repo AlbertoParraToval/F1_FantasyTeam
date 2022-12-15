@@ -1,5 +1,6 @@
 # F1_FantasyTeam 
-![F1_logo](https://user-images.githubusercontent.com/91873665/207651713-eb09bce3-a05f-47df-a283-fe657399be73.jpg)
+![F1_logo](https://user-images.githubusercontent.com/91873665/207939847-5e583aad-f48c-42d6-a6c8-40904f1f1378.jpg)
+
 ## Índice
 1. ¿Por qué F1_FantasyTeam?
 2. ¿Cómo funciona?
