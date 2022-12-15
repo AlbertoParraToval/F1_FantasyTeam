@@ -63,7 +63,6 @@ export class TeamsService {
     {
       id: 10,
       name: "Williams Racing F1",
-
       description: "El equipo Williams es una de las entidades con más historia en la Fórmula 1, con un legado que se remonta a la temporada 1977 y un nutrido palmarés compuesto por nueve títulos del Mundial de Constructores y siete del de Pilotos.",
       image: "https://drive.google.com/uc?export=view&id=1nHrwPXvF2R0NusouBY_YWWW9Lr2wJKpA",
     },

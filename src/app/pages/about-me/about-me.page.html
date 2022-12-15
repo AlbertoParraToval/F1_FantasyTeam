@@ -14,13 +14,17 @@
         <ion-card color="dark">
           <ion-card-header>
             <img alt="Mi profile" src="./../../../assets/images/fotos/profile.jpg" />
-            <ion-card-title>{{'information.name' | translate}}</ion-card-title>
-            <ion-card-subtitle>{{'information.subName' | translate}}</ion-card-subtitle>
           </ion-card-header>
         </ion-card>
       </ion-col>
       <ion-col size="12" size-lg="6" size-sm="11">
     <ion-card-content >
+      <ion-text>
+        <h2 [ngStyle]="{'background-color':'grey' }" >{{'information.me' | translate}}</h2>
+      <ion-card-title color="light">{{'information.name' | translate}}</ion-card-title>
+            <ion-card-subtitle color="light">{{'information.subName' | translate}}</ion-card-subtitle>
+      </ion-text>
+      
       <ion-text >
         <h2 [ngStyle]="{'background-color':'grey' }" >{{'information.Intro' | translate}}</h2>
       </ion-text>
