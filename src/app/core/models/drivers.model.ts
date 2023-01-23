@@ -3,6 +3,6 @@ export interface driversModel{
   name:string;
   nickname:string;
   dorsal:number;
-  palmares:string;
+  puntos:string;
   image:string;
 }
