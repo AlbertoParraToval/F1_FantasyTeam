@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "managements",
+  "info": {
+    "singularName": "management",
+    "pluralName": "managements",
+    "displayName": "Management",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "duracionContrato": {
+      "type": "string"
+    },
+    "team_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::team.team"
+    },
+    "driver_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::driver.driver"
+    }
+  }
+}

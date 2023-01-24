@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "drivers",
+  "info": {
+    "singularName": "driver",
+    "pluralName": "drivers",
+    "displayName": "Driver",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Nickname": {
+      "type": "string"
+    },
+    "Dorsal": {
+      "type": "integer",
+      "unique": true
+    },
+    "Points": {
+      "type": "float"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

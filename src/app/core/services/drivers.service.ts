@@ -12,7 +12,7 @@ export class DriversService {
       name:"Max Verstappen",
       nickname:"Super Max",
       dorsal: 1,
-      palmares:"532 Points",
+      puntos:"532 Points",
       image: "https://drive.google.com/uc?export=view&id=1IqRoRaocEKsxseJlusj8oQmxQmqOUzin"
     },
     {
@@ -20,7 +20,7 @@ export class DriversService {
       name:"Charles Leclerc",
       nickname:"Il Predestinato",
       dorsal: 16,
-      palmares:"290 Points",
+      puntos:"290 Points",
       image: "https://drive.google.com/uc?export=view&id=1NxxdwYqWm2c78UETD4O8TRoWrZZyEAZC"
     },
     {
@@ -28,7 +28,7 @@ export class DriversService {
       name:"Sergio Perez",
       nickname:"Checo",
       dorsal: 11,
-      palmares:"288 Points",
+      puntos:"288 Points",
       image: "https://drive.google.com/uc?export=view&id=1eoSib9mgjM-XtP9P3F2JX1178NaLroXQ"
     },
     {
@@ -36,7 +36,7 @@ export class DriversService {
       name:"George Russell",
       nickname:"Georgy",
       dorsal: 6,
-      palmares:"266 Points",
+      puntos:"266 Points",
       image: "https://drive.google.com/uc?export=view&id=10Bs117r_RWUySvXj1GrbdKe5cKVH7eCr"
     },
     {
@@ -44,7 +44,7 @@ export class DriversService {
       name:"Carlos Sainz",
       nickname:"Smooth Operator",
       dorsal: 55,
-      palmares:"255 Points",
+      puntos:"255 Points",
       image: "https://drive.google.com/uc?export=view&id=1skDDQBIzQxvJ3YHzGqyvxUk9RMGtfr6E"
     },
     {
@@ -52,7 +52,7 @@ export class DriversService {
       name:"Lewis Hamilton",
       nickname:"Hamilton",
       dorsal: 44,
-      palmares:"245 Points",
+      puntos:"245 Points",
       image: "https://drive.google.com/uc?export=view&id=1xMGKU-Ma6UZkGN-0zZJ9XRYrKZNPBw8l"
     },
     {
@@ -60,7 +60,7 @@ export class DriversService {
       name:"Lando Norris",
       nickname:"Norrizsio",
       dorsal: 4,
-      palmares:"125 Points",
+      puntos:"125 Points",
       image: "https://drive.google.com/uc?export=view&id=1O4gFayzKMhUtTh2feCDY2vhU6Z-xyrQd"
     },
     {
@@ -68,7 +68,7 @@ export class DriversService {
       name:"Esteban Ocon",
       nickname:"Mojon",
       dorsal: 31,
-      palmares:"80 Points",
+      puntos:"80 Points",
       image: "https://drive.google.com/uc?export=view&id=1Yu1J6Os7f-XN0fzBKdhR2jvXWc7RS5Ho"
     },
     {
@@ -76,7 +76,7 @@ export class DriversService {
       name:"Fernando Alonso",
       nickname:"Nano",
       dorsal: 14,
-      palmares:"70 Points",
+      puntos:"70 Points",
       image: "https://drive.google.com/uc?export=view&id=1i68D7SC_SbTta-ILwQmQDDVvE95wgFF7"
     },
     {
@@ -84,7 +84,7 @@ export class DriversService {
       name:"Yuki Tsunoda",
       nickname:"Peligro Japonés",
       dorsal: 22,
-      palmares:"40 Points",
+      puntos:"40 Points",
       image: "https://drive.google.com/uc?export=view&id=1wtV3NmdFsVDjbJ42NSfdI9nuZvuUXCbt"
     },
     {
@@ -92,7 +92,7 @@ export class DriversService {
       name:"Pierre Gasly",
       nickname:"Gabacho",
       dorsal: 10,
-      palmares:"38 Points",
+      puntos:"38 Points",
       image: "https://drive.google.com/uc?export=view&id=1RHp3mg2jD1YNKGgyO2RYdzLMcyU5hrGx"
     },
     {
@@ -100,7 +100,7 @@ export class DriversService {
       name:"Daniel Ricciardo",
       nickname:"Ricky",
       dorsal: 3,
-      palmares:"35 Points",
+      puntos:"35 Points",
       image: "https://drive.google.com/uc?export=view&id=1vazUWwbbeeJcApGfGpX2nkHC-Cv28v5y"
     },
     {
@@ -108,7 +108,7 @@ export class DriversService {
       name:"Kevin Magnussen",
       nickname:"K-Mag",
       dorsal: 20,
-      palmares:"33 Points",
+      puntos:"33 Points",
       image: "https://drive.google.com/uc?export=view&id=1lx14XVqUoDxcU6lWJ2IQWD49G-6JALc-"
     },
     {
@@ -116,7 +116,7 @@ export class DriversService {
       name:"Mick Schumacher",
       nickname:"Mini Schumi",
       dorsal: 47,
-      palmares:"31 Points",
+      puntos:"31 Points",
       image: "https://drive.google.com/uc?export=view&id=1zbd9jOPnShR69IsQXarFtiF3W8E9w-dx"
     }
     ,
@@ -125,7 +125,7 @@ export class DriversService {
       name:"Sebastian Vettel",
       nickname:"Seb",
       dorsal: 5,
-      palmares:"30 Points",
+      puntos:"30 Points",
       image: "https://drive.google.com/uc?export=view&id=1C4CU7ashKS38S_nwD13-3f8rSDxhoZ4j"
     }
     ,
@@ -134,7 +134,7 @@ export class DriversService {
       name:"Valtery Bottas",
       nickname:"Bottery",
       dorsal: 77,
-      palmares:"24 Points",
+      puntos:"24 Points",
       image: "https://drive.google.com/uc?export=view&id=1cBejNm4y9AE_-amezrqbZU0XcrIKfUhG"
     }
     ,
@@ -143,7 +143,7 @@ export class DriversService {
       name:"Guan yu Zhou",
       nickname:"El chino de calidad",
       dorsal: 34,
-      palmares:"19 Points",
+      puntos:"19 Points",
       image: "https://drive.google.com/uc?export=view&id=1qmQX8gMbdlv61Y2l9PXJrOZKSV69F8Wb"
     }
     ,
@@ -152,7 +152,7 @@ export class DriversService {
       name:"Alexander Albon",
       nickname:"Albonio",
       dorsal: 9,
-      palmares:"16 Points",
+      puntos:"16 Points",
       image: "https://drive.google.com/uc?export=view&id=1urIFyK4qqAdyWv0CgK6CRHmaLtm1Yqi-"
     }
     ,
@@ -161,7 +161,7 @@ export class DriversService {
       name:"Lance Stroll",
       nickname:"Senna Canadiense",
       dorsal: 13,
-      palmares:"15 Points",
+      puntos:"15 Points",
       image: "https://drive.google.com/uc?export=view&id=1zaTUGzMCSnCDc9HVKU7HUfxezIl0IE3p"
     }
     ,
@@ -170,7 +170,7 @@ export class DriversService {
       name:"Nicolas Latifi",
       nickname:"Goatifi",
       dorsal: 23,
-      palmares:"0 Points",
+      puntos:"0 Points",
       image: "https://drive.google.com/uc?export=view&id=1d2q_kfFAEnSoweQfUWQ7iVJ6t4ONaX5E"
     }
   ]
